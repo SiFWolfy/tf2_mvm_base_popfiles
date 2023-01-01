@@ -1,17 +1,24 @@
 // Available Templates to copy are as follows
-//
-//
-//
+// T_TFBot_Scout
+// T_TFBot_Scout_Melee -> Bat
+// 
 //
 
 WaveSchedule
 {
- Templates
-   {
-   // Scout
-   T_TFBot_Scout
-    Class Scout
-    Classicon scout
-   }
-   
+	Templates
+	{
+		// Scout
+		T_TFBot_Scout
+			Class Scout
+		}
+		
+		T_TFBot_Scout_Melee
+		{
+			Class Scout
+			Classicon scout_bat
+			Skill Hard // increased to improve ability to hit with melee
+			WeaponRestrictions MeleeOnly
+		}
+
    
