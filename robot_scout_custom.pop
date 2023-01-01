@@ -10,7 +10,47 @@ WaveSchedule
 	{
 		// Scout
 		T_TFBot_Scout
+		{
 			Class Scout
+		}
+		
+		T_TFBot_Scout_Scattergun
+		{
+			Class scout
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SCATTERGUN"
+			}
+		}
+		
+		T_TFBot_Scout_Scattergun_SlowFire
+		{
+			Class scout
+			Skill Easy
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SCATTERGUN"
+				"fire rate bonus" 1.15 //fire slower
+			}
+		}
+		
+		
+		T_TFBot_Scout_FAN
+		{
+			Class Scout
+			Skill Expert
+			ClassIcon scout_fan
+			Name "Force-A-Nature Scout"
+			Item "The Bolt Boy"
+			Item "The Force-a-Nature"
+			MaxVisionRange 500	// Reduced Vision
+			ItemAttributes
+			{
+				ItemName "The Force-a-Nature"
+				"faster reload rate" 1.6 // 60% slower reload
+				"scattergun knockback mult" 1.5
+				"damage bonus" 0.65		// 35% damage reduction
+			}
 		}
 		
 		T_TFBot_Scout_Melee
