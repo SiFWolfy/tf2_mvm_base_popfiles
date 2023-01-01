@@ -1,0 +1,17 @@
+// Available Templates to copy are as follows
+//
+//
+//
+//
+
+WaveSchedule
+{
+ Templates
+   {
+   // Scout
+   T_TFBot_Scout
+    Class Scout
+    Classicon scout
+   }
+   
+   
