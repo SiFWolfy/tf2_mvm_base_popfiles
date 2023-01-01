@@ -1,6 +1,10 @@
 // Available Templates to copy are as follows
 // T_TFBot_Scout
-// T_TFBot_Scout_Melee -> Bat
+// T_TFBot_Scout_Scattergun -> Normal, Scattergun
+// T_TFBot_Scout_Scattergun_SlowFire -> Easy, Scattergun; intended for INT missions
+// T_TFBot_Scout_FAN
+// T_TFBot_Scout_BackScatter
+// T_TFBot_Scout_Melee -> Hard, Bat
 // 
 //
 
@@ -50,6 +54,19 @@ WaveSchedule
 				"faster reload rate" 1.6 // 60% slower reload
 				"scattergun knockback mult" 1.5
 				"damage bonus" 0.65		// 35% damage reduction
+			}
+		}
+		
+		T_TFBot_Scout_BackScatter // has no custom icon, add it yourself. Though if the where spawn is not "Behind", don't bother.
+		{
+			Class Scout
+			Item "The Back Scatter" 
+			ItemAttributes
+			{
+				ItemName "The Back Scatter"
+				"faster reload rate" 1.5 // 50% reload speed
+				"crit from behind" 1
+				"weapon spread bonus" 1.5 // 50% more accurate
 			}
 		}
 		
