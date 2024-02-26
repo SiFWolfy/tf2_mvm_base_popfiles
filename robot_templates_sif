@@ -1,17 +1,53 @@
 // List of SiF's Custom Robot Templates
 
-// TFBot_Scout_Armored // mini-giant scout
+
+// T_TFBot_Scout_Nailgun
+// T_TFBot_Scout_Hyper
+// T_TFBot_Scout_Hyper_Pistol
+// T_TFBot_Scout_Hyper_Bonk
+// T_TFBot_Scout_Hyper_Bonk_Melee
+
+// T_TFBot_Scout_Armored // mini-giant scout
 // T_TFBot_Scout_Backscatter
-// T_TFBot_Scout_Blaster // mvm-ver of PEPBlaster
+// T_TFBot_Scout_Blaster // mvm-ver of PEPBlasster
 // T_TFBot_Scout_Blaster_PublicEnemy
 // T_TFBot_Scout_Blaster_Push
 // T_TFBot_Scout_Blaster_Rush
 // T_TFBot_Scout_Bonk_Fixed // no longer awkwardly waits before drinking + locked to primary. Feel free to feed them crits
+// T_TFBot_Scout_Fan
+// T_TFBot_Scout_Fan_Push
+// T_TFBot_Scout_Fan_DoubleTap
 // T_TFBot_Scout_Scattergun_FastFire
 // T_TFBot_Scout_Scattergun_SlowerFire
-// T_TFBot_Scout_Shorstopper // default-sized scout with shortstop. Give them crit-a-cola and they're more lethal than default scouts
+// T_TFBot_Scout_Shorstopper // default-sized scout with shortstop. Give them crit-a-
 // T_TFBot_Scout_Shortstop_Delivery // Old item set. +25 hp, prone to knockback
+// T_TFBot_Scout_SodaPopper
+// T_TFBot_Scout_SodaPopper_MiniCrit
 
+// T_TFBot_Scout_Capper // does not reload
+// T_TFBot_Scout_Cleaver
+// T_TFBot_Scout_Luger
+// T_TFBot_Scout_Luger_Atomic
+// T_TFBot_Scout_Milk
+// T_TFBot_Scout_Milk_Slow
+// T_TFBot_Scout_MiniCrit // cola
+// T_TFBot_Scout_Pistol
+// T_TFBot_Scout_Pistol_Heal
+// T_TFBot_Scout_Raygun // Shoots pomson laser
+// T_TFBot_Scout_Winger // trades slow, for deagle-like damage
+
+// T_TFBot_Scout_Basher
 // T_TFBot_Scout_Batsaber
+// T_TFBot_Scout_Cane
+// T_TFBot_Scout_Cane_Elf // gnome scout. Literally no health
 // T_TFBot_Scout_Quick // mini-giant super scout
 // T_TFBot_Scout_Fast // mini super scout
+// T_TFBot_Scout_Fast_Bonk
+// T_TFBot_Scout_Sandman_Spammer
+// T_TFBot_Scout_Sandman_Spammer_Tagger
+// T_TFBot_Scout_Sword
+// T_TFBot_Scout_Tagger
+// T_TFBot_Scout_Wrap // more of an annoyance compared to sandman, put them as mission_sniper for maximum PAIN value
+// T_TFBot_Scout_Wrap_LittleAccomplice // Old Item set. Targets laugh when hit by bauble, they died? This bot laughs.
+
+// T_TFBot_Giant_Scout_Shortstop
