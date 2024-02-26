@@ -1,1 +1,17 @@
+// List of SiF's Custom Robot Templates
 
+// TFBot_Scout_Armored // mini-giant scout
+// T_TFBot_Scout_Backscatter
+// T_TFBot_Scout_Blaster // mvm-ver of PEPBlaster
+// T_TFBot_Scout_Blaster_PublicEnemy
+// T_TFBot_Scout_Blaster_Push
+// T_TFBot_Scout_Blaster_Rush
+// T_TFBot_Scout_Bonk_Fixed // no longer awkwardly waits before drinking + locked to primary. Feel free to feed them crits
+// T_TFBot_Scout_Scattergun_FastFire
+// T_TFBot_Scout_Scattergun_SlowerFire
+// T_TFBot_Scout_Shorstopper // default-sized scout with shortstop. Give them crit-a-cola and they're more lethal than default scouts
+// T_TFBot_Scout_Shortstop_Delivery // Old item set. +25 hp, prone to knockback
+
+// T_TFBot_Scout_Batsaber
+// T_TFBot_Scout_Quick // mini-giant super scout
+// T_TFBot_Scout_Fast // mini super scout
