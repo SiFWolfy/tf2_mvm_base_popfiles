@@ -1,52 +1,188 @@
 // List of SiF's Custom Robot Templates
 
-
-// T_TFBot_Scout_Nailgun
-// T_TFBot_Scout_Hyper
-// T_TFBot_Scout_Hyper_Pistol
-// T_TFBot_Scout_Hyper_Bonk
-// T_TFBot_Scout_Hyper_Bonk_Melee
-
-// T_TFBot_Scout_Armored // mini-giant scout
-// T_TFBot_Scout_Backscatter
-// T_TFBot_Scout_Blaster // mvm-ver of PEPBlasster
-// T_TFBot_Scout_Blaster_PublicEnemy
-// T_TFBot_Scout_Blaster_Push
-// T_TFBot_Scout_Blaster_Rush
-// T_TFBot_Scout_Bonk_Fixed // no longer awkwardly waits before drinking + locked to primary. Feel free to feed them crits
-// T_TFBot_Scout_Fan
-// T_TFBot_Scout_Fan_Push
-// T_TFBot_Scout_Fan_DoubleTap
-// T_TFBot_Scout_Scattergun_FastFire
+// SMOL
+// Scout
+// T_TFBot_Scout_Armored
+// T_TFBot_Scout_Bonk_Fixed
+// T_TFBot_Scout_Backscatter			// VAR-A.. the same default.
+// T_TFBot_Scout_Backscatter_Vicious		// VAR-B Crits from Behind, garbage aim (Tindall's OverclockedBot concept)
+// T_TFBot_Scout_Blaster 		// VAR-A MvM-ver
+// T_TFBot_Scout_Blaster_Push		// VAR-B
+// T_TFBot_Scout_Blaster_PublicEnemy	// VAR-C Massive Pellet Bonus (Clickin' Blasters)
+// T_TFBot_Scout_Blaster_Rush	// VAR-D Super Scout Blasters
+// T_TFBot_Scout_Fan		// VAR-A Knocks you back
+// T_TFBot_Scout_Fan_Doubletap // VAR-B Fires clip at once
+// T_TFBot_Scout_Fan_Push	// VAR-C Knocks you up
+// T_TFBot_Scout_Fan_Reversed	// VAR-D Pulls you towards them
+// T_TFBot_Scout_Fan_Freeze	// VAR-E Freezes your input (Tindall's OverclockedBot concept)
+// T_TFBot_Scout_Nailgun	
 // T_TFBot_Scout_Scattergun_SlowerFire
-// T_TFBot_Scout_Shorstopper // default-sized scout with shortstop. Give them crit-a-
-// T_TFBot_Scout_Shortstop_Delivery // Old item set. +25 hp, prone to knockback
-// T_TFBot_Scout_SodaPopper
-// T_TFBot_Scout_SodaPopper_MiniCrit
-
-// T_TFBot_Scout_Capper // does not reload
-// T_TFBot_Scout_Cleaver
-// T_TFBot_Scout_Luger
+// T_TFBot_Scout_Scattergun_FastFire
+// T_TFBot_Scout_Shortstopper 	// VAR-A Small Shortstop
+// T_TFBot_Scout_Shortstop_Delivery // VAR-B [Old set] +25 HP, Weak to knockback
+// T_TFBot_Scout_SodaPopper	// VAR-A Fires faster, Gave them the bugged fr-speed upgrade
+// T_TFBot_Scout_SodaPopper_Minicrit // VAR-B Has Crit-a-cola
+// T_TFBot_Scout_SodaPopper_NumberOneFan // VAR-C [Old set] Increased mobility and jump height
+// T_TFBot_Scout_Cleaver 
+// T_TFBot_Scout_Cleaver_Burn
+// T_TFBot_Scout_Luger	// Innacurate spam, deals higher damage
 // T_TFBot_Scout_Luger_Atomic
 // T_TFBot_Scout_Milk
 // T_TFBot_Scout_Milk_Slow
-// T_TFBot_Scout_MiniCrit // cola
+// T_TFBot_Scout_MiniCrit	// locked to Primary
 // T_TFBot_Scout_Pistol
 // T_TFBot_Scout_Pistol_Heal
-// T_TFBot_Scout_Raygun // Shoots pomson laser
-// T_TFBot_Scout_Winger // trades slow, for deagle-like damage
-
-// T_TFBot_Scout_Basher
+// T_TFBot_Scout_Raygun	 // VAR-A Infinite ammo pistol
+// T_TFBot_Scout_Raygun_Energy // VAR-B Fires Bison Laser
+// T_TFBot_Scout_Winger
+// T_TFBot_Scout_Atomizer
+// T_TFBot_Scout_Basher	// Does not bleed itself on miss
 // T_TFBot_Scout_Batsaber
-// T_TFBot_Scout_Cane
-// T_TFBot_Scout_Cane_Elf // gnome scout. Literally no health
-// T_TFBot_Scout_Quick // mini-giant super scout
-// T_TFBot_Scout_Fast // mini super scout
+// T_TFBot_Scout_Cane	  // VAR-A
+// T_TFBot_Scout_Cane_Elf // VAR-B Scout Gnome
+// T_TFBot_Scout_Cane_Heals // VAR-C Heal on Hit. Literal definition of idle scout, whacking you with a bat.
+// T_TFBot_Scout_Fast		// Mini Super Scout
 // T_TFBot_Scout_Fast_Bonk
+// T_TFBot_Scout_Quick		// MiniGiant Super Scout, also melees
 // T_TFBot_Scout_Sandman_Spammer
 // T_TFBot_Scout_Sandman_Spammer_Tagger
+// T_TFBot_Scout_Sandman_Tagger
+// T_TFBot_Scout_SunOnStick		// VAR-A Default
+// T_TFBot_Scout_SunOnStick_Ignite	// VAR-B Reapply all Afterburn ticks as CRIT until fire is put out
+// T_TFBot_Scout_SunOnStick_Molten	// VAR-C Hit will ignite and Axtinguish (Inspired by Gettysburg's DD Bot)
 // T_TFBot_Scout_Sword
-// T_TFBot_Scout_Tagger
+// T_TFBot_Scout_Swordknight	// Trades swing speed for more bleed. Moves noticeably slower.
+// T_TFBot_Scout_Tagger 		// Fan o' War
+// T_TFBot_Scout_Wrap 			// Only works on mission_sniper. Won't launch bauble otherwise
+// T_TFBot_Scout_Wrap_LittleAccoplice // Scout Gnome.  [Old set] Laugh on hit and kill.
+
+// Soldier
+// T_TFBot_Soldier_Airstrike_Para
+// T_TFBot_Soldier_Airstrike_RocketJump
+// T_TFBot_Soldier_Armored
+// T_TFBot_Soldier_Armored_Pickax	// Gains speed and damage upon shot.
+// T_TFBot_Soldier_Batt
+// T_TFBot_Soldier_Barrage
+// T_TFBot_Soldier_Bazooka
+// T_TFBot_Soldier_Bazooka_Batt
+// T_TFBot_Soldier_Bazooka_Buff
+// T_TFBot_Soldier_Bazooka_Conch
+// T_TFBot_Soldier_Buff
+// T_TFBot_Soldier_Burst
+// T_TFBot_Soldier_Burst_Backup
+// T_TFBot_Soldier_Burst_Buff
+// T_TFBot_Soldier_Burst_Conch
+// T_TFBot_Soldier_Burst_RapidFire
+// T_TFBot_Soldier_BlackBox
+// T_TFBot_Soldier_BlackBox_RocketShotgun
+// T_TFBot_Soldier_BlackBox_MegaHeal
+// T_TFBot_Soldier_BlackBox_Atomic
+// T_TFBot_Soldier_BlackBox_TankBuster // [Old set] +20% resist to sentry
+// T_TFBot_Soldier_Blast		// VAR-A Pushes target back
+// T_TFBot_Soldier_Blast_Skybox 	// VAR-B Launches target to skybox
+// T_TFBot_Soldier_Blast_Reversed	// VAR-C Forces fall damage
+// T_TFBot_Soldier_Blast_RapidFire
+// T_TFBot_Soldier_Charged_Not
+// T_TFBot_Soldier_Charged
+// T_TFBot_Soldier_Charged_Barrage
+// T_TFBot_Soldier_Charged_Burst
+// T_TFBot_Soldier_Charged_RapidFire
+// T_TFBot_Soldier_Conch
+// T_TFBot_Soldier_CowMangler
+// T_TFBot_Soldier_CowMangler_Burn		// VAR-B Does High Afterburn
+// T_TFBot_Soldier_CowMangler_Charged		// VAR-C Intended to be mission_sniper
+// T_TFBot_Soldier_CowMangler_TinSoldier	// VAR-D Fires in Burst
+// T_TFBot_Soldier_CowMangler_Grordbort		// VAR-E Always Minicrit
+// T_TFBot_Soldier_DirectHit
+// T_TFBot_Soldier_DirectHit_Batt
+// T_TFBot_Soldier_DirectHit_Buff
+// T_TFBot_Soldier_DirectHit_Burst
+// T_TFBot_Soldier_DirectHit_Conch
+// T_TFBot_Soldier_DirectHit_Instant
+// T_TFBot_Soldier_DirectHit_RapidFire
+// T_TFBot_Soldier_DirectHit_RapidFire_Buff
+// T_TFBot_Soldier_Jumper_Stun	 // VAR-A RocketSpec 4
+// T_TFBot_Soldier_Jumper_Garden // VAR-B mission_sniper Trolldier
+// T_TFBot_Soldier_RapidFire
+// T_TFBot_Soldier_RapidFire_Batt
+// T_TFBot_Soldier_RapidFire_Buff
+// T_TFBot_Soldier_RapidFire_Conch
+// T_TFBot_Soldier_ScatterFire
+// T_TFBot_Soldier_Bison
+// T_TFBot_Soldier_Bison_RapidFire
+// T_TFBot_Soldier_Pickax		// Pre-nerf equalizer stats
+// T_TFBot_Soldier_Pickax_Batt
+// T_TFBot_Soldier_Pickax_Buff
+// T_TFBot_Soldier_Pickax_Conch
+// T_TFBot_Soldier_Whipper
+// T_TFBot_Soldier_Whipper_Batt
+// T_TFBot_Soldier_Whipper_Buff
+// T_TFBot_Soldier_Whipper_Concheror
+
+// Pyro
+// T_TFBot_Pyro_Armored
+// T_TFBot_Pyro_Airblast
+// T_TFBot_Pyro_Airblast_Push
+// T_TFBot_Pyro_Backburn
+// T_TFBot_Pyro_Batt
+// T_TFBot_Pyro_Batt_NoAirblast
+// T_TFBot_Pyro_Buff
+// T_TFBot_Pyro_Buff_NoAirblast
+// T_TFBot_Pyro_Conch
+// T_TFBot_Pyro_Conch_NoAirblast
+// T_TFBot_Pyro_Flamethrower_HardTrack
+// T_TFBot_Pyro_Flamethrower_Clueless
+// T_TFBot_Pyro_Deflector
+// T_TFBot_Pyro_Dragon		// VAR-A DF locked to Hard Skill
+// T_TFBot_Pyro_Dragon_Heal
+// T_TFBot_Pyro_Dragon_RapidFire
+// T_TFBot_Pyro_Dragon_Slow
+// T_TFBot_Pyro_Dragon_Derg // VAR-E DF Ignited target takes more damage
+// T_TFBot_Pyro_Dragonling // VAR-F Weaker DF with multiple nerfs
+// T_TFBot_Pyro_Dragon_Combo // Var-G Reapply afterburn tick as CRIT
+// T_TFBot_Pyro_Dragon_Paw // VAR-H Ignited target is printed in the Scoreboard
+
+// T_TFBot_Pyro_Detonator
+// T_TFBot_Pyro_Detonator_RapidFire
+// T_TFBot_Pyro_Flare
+// T_TFBot_Pyro_Flare_Heal	
+// T_TFBot_Pyro_Flare_Punch // Fast flares. Kills burning
+// T_TFBot_Pyro_Flare_RapidFire
+
+// T_TFBot_Pyro_Axtinguish // Burning Target takes CRIT
+
+// Demo
+
+// Heavy 
+
+// Engineer
+
+// Medic
+
+// Sniper
+
+// Spy
+
+
+// GIANTS
+
+// Scout
+
+// Soldier
+	
+// Pyro
+
+// Demo
+
+// Heavy 
+
+// Engineer
+
+// Medic
+
+// Sniper
+
+// Spy
 // T_TFBot_Scout_Wrap // more of an annoyance compared to sandman, put them as mission_sniper for maximum PAIN value
 // T_TFBot_Scout_Wrap_LittleAccomplice // Old Item set. Targets laugh when hit by bauble, they died? This bot laughs.
 
