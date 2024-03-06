@@ -121,8 +121,10 @@
 
 // Pyro
 // T_TFBot_Pyro_Armored
+// T_TFBot_Pyro_Armored_Homewrecker
 // T_TFBot_Pyro_Airblast
-// T_TFBot_Pyro_Airblast_Push
+// T_TFBot_Pyro_Airblast_Hyper // 0.05 refire. Peak asshat
+// T_TFBot_Pyro_Airblast_Push // Forces m2, ignores proj
 // T_TFBot_Pyro_Backburn
 // T_TFBot_Pyro_Batt
 // T_TFBot_Pyro_Batt_NoAirblast
@@ -130,9 +132,22 @@
 // T_TFBot_Pyro_Buff_NoAirblast
 // T_TFBot_Pyro_Conch
 // T_TFBot_Pyro_Conch_NoAirblast
-// T_TFBot_Pyro_Flamethrower_HardTrack
-// T_TFBot_Pyro_Flamethrower_Clueless
+// T_TFBot_Pyro_Flamethrower_Afterburn
+// T_TFBot_Pyro_Flamethrower_Bleed
+// T_TFBot_Pyro_Flamethrower_Clueless	// Easy Skill, will try to W+M1
+// T_TFBot_Pyro_Flamethrower_FlameDrag
+// T_TFBot_Pyro_Flamethrower_FlameRicochet	
+// T_TFBot_Pyro_Flamethrower_Heal
+// T_TFBot_Pyro_Flamethrower_HardTrack	// Expert Skill, cannot reflect
+// T_TFBot_Pyro_Flamethrower_Magnetic
+// T_TFBot_Pyro_Flamethrower_Old 		// Based off TFC_Pyro's Flamethrower 
+// T_TFBot_Pyro_Flamethrower_Repulsive	// Causes airblast + less burn
+// T_TFBot_Pyro_Flamethrower_Slow	// same effect same rocketspec
 // T_TFBot_Pyro_Deflector
+// T_TFBot_Pyro_Degreaser_GasJockey	// Slightly faster move speed, but vulnerable to bullets
+// T_TFBot_Pyro_Phlog
+// T_TFBot_Pyro_Phlog_Moonman
+// T_TFBot_Pyro_Phlog_TauntCancel
 // T_TFBot_Pyro_Dragon		// VAR-A DF locked to Hard Skill
 // T_TFBot_Pyro_Dragon_Heal
 // T_TFBot_Pyro_Dragon_RapidFire
@@ -141,17 +156,50 @@
 // T_TFBot_Pyro_Dragonling // VAR-F Weaker DF with multiple nerfs
 // T_TFBot_Pyro_Dragon_Combo // Var-G Reapply afterburn tick as CRIT
 // T_TFBot_Pyro_Dragon_Paw // VAR-H Ignited target is printed in the Scoreboard
-
 // T_TFBot_Pyro_Detonator
 // T_TFBot_Pyro_Detonator_RapidFire
 // T_TFBot_Pyro_Flare
 // T_TFBot_Pyro_Flare_Heal	
 // T_TFBot_Pyro_Flare_Punch // Fast flares. Kills burning
 // T_TFBot_Pyro_Flare_RapidFire
+// T_TFBot_Pyro_Flare_Incendiary
+// T_TFBot_Pyro_Jetpack_Stun
+// T_TFBot_Pyro_Manmelter
+// T_TFBot_Pyro_Homewrecker	
+// T_TFBot_Pyro_Manmelter_Moonman /// [Old set] Gain Critboost on kill
+// T_TFBot_Pyro_Scorch
+// T_TFBot_Pyro_Scorch_Push
+// T_TFBot_Pyro_Scorch_RapidFire
+// T_TFBot_Pyro_Shotgun
+// T_TFBot_Pyro_Shotgun_Single
 
 // T_TFBot_Pyro_Axtinguish // Burning Target takes CRIT
+// T_TFBot_Pyro_Hothand
 
 // Demo
+// T_TFBot_Demoman_Armored
+// T_TFBot_Demoman_Armored_RapidFire
+// T_TFBot_Demoman_Batt
+// T_TFBot_Demoman_Blast
+// T_TFBot_Demoman_Blast_Skybox
+// T_TFBot_Demoman_Bleed
+// T_TFBot_Demoman_Buff
+// T_TFBot_Demoman_Burst
+// T_TFBot_Demoman_Burst_Bleed
+// T_TFBot_Demoman_Charged
+// T_TFBot_Demoman_Cluster
+// T_TFBot_Demoman_Cluster_Blast
+// T_TFBot_Demoman_Conch
+// T_TFBot_Demoknight_Armored	// copypaste from Samurai
+// T_TFBot_Demoknight_Armored_AirCharge
+// T_TFBot_Demoknight_Bash
+// T_TFBot_Demoknight_Bottle
+// T_TFBot_Demoknight_Caber	// Suicides
+// T_TFBot_Demoknight_Caber_Atomic	// Suicides, taking you with them
+// T_TFBot_Demoknight_Golf
+// T_TFBot_Demoknight_Golf_Stunball // launches sandman as well
+// T_TFBot_Demoknight_Pan
+//
 
 // Heavy 
 
