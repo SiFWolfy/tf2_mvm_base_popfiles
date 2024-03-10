@@ -1,0 +1,55 @@
+#base robot_giant.pop
+#base robot_standard.pop
+#base robot_sif.pop
+//	#base testingban_sif // No Medic, No Demoknight, No Huntsman, No Airblast, No Knockback wpns, No crit/uber canteens
+//	#base testingban_ml // No medic, No Sniper, No Class Stack, No Airblast, No crit/uber canteens
+
+// Subtle Machination v4
+// Made by SiF
+// https://steamcommunity.com/id/SiFWolfy
+// Map my Signalmax
+
+// Starting 650$
+// Wave	  Payout	Total (A+) 
+// ========================
+// 1      650$
+// 2      
+// 3      
+// 4      
+// 5      
+// 6      621$
+
+Rawr_awra_awa // :33
+{
+  StartingCurrency 650
+	CanBotsAttackWhileInSpawnRoom No
+  RespawnWaveTime 8
+  Advanced 1
+	AddSentryBusterWhenKillCountExceeds	15
+	AddSentryBusterWhenDamageDealtExceeds	1200
+
+// MISSION BUSTER -- Buster in this mission is an indicator of ExpectedDifficulty //
+// W1 Reinf / Pusher 
+// W2 Fast / Bonk!
+// W3 Twin
+// W4-W5 Reinforced (Stun and Push Immune)
+// W6 FakeDetonation / Disguised
+Mission	{	// Wave 1's Funny buster
+	//RandomSpawn 1
+	Where spawnbot_rand
+	Objective DestroySentries
+	InitialCooldown	30
+	CooldownTime 35
+	DesiredCount	1
+	BeginAtWave 1
+	RunForThisManyWaves 6
+
+  TFBot  {
+  Template T_TFBot_SentryBuster_Reinforced
+  }
+  }
+
+// MISSION SNIPER //
+// MISSION SPY //
+// MISSION ENGINEER //
+}
