@@ -1,8 +1,10 @@
 // List of SiF's Custom Robot Templates
 
+
 // SMOL
 // Scout
 // T_TFBot_Scout_Armored
+
 // T_TFBot_Scout_Bonk_Fixed
 // T_TFBot_Scout_Backscatter			// VAR-A.. the same default.
 // T_TFBot_Scout_Backscatter_Vicious		// VAR-B Crits from Behind, garbage aim (Tindall's OverclockedBot concept)
@@ -23,6 +25,7 @@
 // T_TFBot_Scout_SodaPopper	// VAR-A Fires faster, Gave them the bugged fr-speed upgrade
 // T_TFBot_Scout_SodaPopper_Minicrit // VAR-B Has Crit-a-cola
 // T_TFBot_Scout_SodaPopper_NumberOneFan // VAR-C [Old set] Increased mobility and jump height
+
 // T_TFBot_Scout_Cleaver 
 // T_TFBot_Scout_Cleaver_Burn
 // T_TFBot_Scout_Luger	// Innacurate spam, deals higher damage
@@ -35,6 +38,7 @@
 // T_TFBot_Scout_Raygun	 // VAR-A Infinite ammo pistol
 // T_TFBot_Scout_Raygun_Energy // VAR-B Fires Bison Laser
 // T_TFBot_Scout_Winger
+
 // T_TFBot_Scout_Atomizer
 // T_TFBot_Scout_Basher	// Does not bleed itself on miss
 // T_TFBot_Scout_Batsaber
@@ -57,10 +61,11 @@
 // T_TFBot_Scout_Wrap_LittleAccoplice // Scout Gnome.  [Old set] Laugh on hit and kill.
 
 // Soldier
-// T_TFBot_Soldier_Airstrike_Para
-// T_TFBot_Soldier_Airstrike_RocketJump
 // T_TFBot_Soldier_Armored
 // T_TFBot_Soldier_Armored_Pickax	// Gains speed and damage upon shot.
+
+// T_TFBot_Soldier_Airstrike_Para
+// T_TFBot_Soldier_Airstrike_RocketJump
 // T_TFBot_Soldier_Batt
 // T_TFBot_Soldier_Barrage
 // T_TFBot_Soldier_Bazooka
@@ -108,8 +113,10 @@
 // T_TFBot_Soldier_RapidFire_Buff
 // T_TFBot_Soldier_RapidFire_Conch
 // T_TFBot_Soldier_ScatterFire
+
 // T_TFBot_Soldier_Bison
 // T_TFBot_Soldier_Bison_RapidFire
+
 // T_TFBot_Soldier_Pickax		// Pre-nerf equalizer stats
 // T_TFBot_Soldier_Pickax_Batt
 // T_TFBot_Soldier_Pickax_Buff
@@ -122,6 +129,8 @@
 // Pyro
 // T_TFBot_Pyro_Armored
 // T_TFBot_Pyro_Armored_Homewrecker
+// T_TFBot_Pyro_Armored_Powerjack
+
 // T_TFBot_Pyro_Airblast
 // T_TFBot_Pyro_Airblast_Hyper // 0.05 refire. Peak asshat
 // T_TFBot_Pyro_Airblast_Push // Forces m2, ignores proj
@@ -153,9 +162,10 @@
 // T_TFBot_Pyro_Dragon_RapidFire
 // T_TFBot_Pyro_Dragon_Slow
 // T_TFBot_Pyro_Dragon_Derg // VAR-E DF Ignited target takes more damage
-// T_TFBot_Pyro_Dragonling // VAR-F Weaker DF with multiple nerfs
+// T_TFBot_Pyro_Dragon_Nerfed // VAR-F Weaker DF with multiple nerfs
 // T_TFBot_Pyro_Dragon_Combo // Var-G Reapply afterburn tick as CRIT
 // T_TFBot_Pyro_Dragon_Paw // VAR-H Ignited target is printed in the Scoreboard
+
 // T_TFBot_Pyro_Detonator
 // T_TFBot_Pyro_Detonator_RapidFire
 // T_TFBot_Pyro_Flare
@@ -166,15 +176,24 @@
 // T_TFBot_Pyro_Jetpack_Stun
 // T_TFBot_Pyro_Manmelter
 // T_TFBot_Pyro_Homewrecker	
-// T_TFBot_Pyro_Manmelter_Moonman /// [Old set] Gain Critboost on kill
+// T_TFBot_Pyro_Manmelter_Moonman // [Old set] Gain Critboost on kill
 // T_TFBot_Pyro_Scorch
 // T_TFBot_Pyro_Scorch_Push
 // T_TFBot_Pyro_Scorch_RapidFire
 // T_TFBot_Pyro_Shotgun
+// T_TFBot_Pyro_Shotgun_Ignite
 // T_TFBot_Pyro_Shotgun_Single
 
+// T_TFBot_Pyro_Ax
 // T_TFBot_Pyro_Axtinguish // Burning Target takes CRIT
+// T_TFBot_Pyro_Backscratcher	
 // T_TFBot_Pyro_Hothand
+// T_TFBot_Pyro_Homewrecker
+// T_TFBot_Pyro_Neon
+// T_TFBot_Pyro_Powerjack
+// T_TFBot_Pyro_Thirddegree // Also crits when hitting from behind
+// T_TFBot_Pyro_Thirddegree_Moonman // [Old set] Gain Critboost on kill
+// T_TFBot_Pyro_Volcanic // Burn damage is upped
 
 // Demo
 // T_TFBot_Demoman_Armored
@@ -190,22 +209,173 @@
 // T_TFBot_Demoman_Cluster
 // T_TFBot_Demoman_Cluster_Blast
 // T_TFBot_Demoman_Conch
+// T_TFBot_Demoman_Loch
+// T_TFBot_Demoman_Loch_Burst
+// T_TFBot_Demoman_Loch_ExpertOrdinance // [Old Set] Deals more dmg vs sentry
+// T_TFBot_Demoman_Loch_RapidFire
+// T_TFBot_Demoman_Loosecannon		// Push, doesn't really kill
+// T_TFBot_Demoman_Loosecannon_Burst
+// T_TFBot_Demoman_Loosecannon_Push // no fuse. Explodes on contact
+// T_TFBot_Demoman_MineLayer	// Grenades stays on the ground for longer
+// T_TFBot_Demoman_Para
+// T_TFBot_Demoman_RapidFire
+// T_TFBot_Demoman_Scatter	
+// T_TFBot_Demoman_Scatter_Blast
+
+// T_TFBot_Demoman_Sticky
+// T_TFBot_Demoman_Barrage	// Fires all 14 scotres stickies before detonating
+// T_TFBot_Demoman_Sticky_Burst	// Fires 4 sticky at a time
+// T_TFBot_Demoman_Sticky_Charged	// Fires slower sticky with high damage
+// T_TFBot_Demoman_Sticky_Quickie
+// T_TFBot_Demoman_Sticky_QuickieSnipe	// negative projectile range. Intended to outsnipe snipers.
+// T_TFBot_Demoman_Sticky_RapidFire
+
 // T_TFBot_Demoknight_Armored	// copypaste from Samurai
 // T_TFBot_Demoknight_Armored_AirCharge
 // T_TFBot_Demoknight_Bash
 // T_TFBot_Demoknight_Bottle
 // T_TFBot_Demoknight_Caber	// Suicides
 // T_TFBot_Demoknight_Caber_Atomic	// Suicides, taking you with them
+// T_TFBot_Demoknight_Caber_Thrower	// launches atomic caber
 // T_TFBot_Demoknight_Golf
 // T_TFBot_Demoknight_Golf_Stunball // launches sandman as well
+// T_TFBot_Demoknight_Heal
+// T_TFBot_Demoknight_Ignite
+// T_TFBot_Demoknight_Mitten
 // T_TFBot_Demoknight_Pan
-//
+// T_TFBot_Demoknight_PainTrain
+// T_TFBot_Demoknight_Persuader
+// T_TFBot_DemoKnight_Samurai // copypaste from zato-samurai, doesn't jump
+// T_TFBot_Demoknight_SkullCutter
+// T_TFBot_Demoknight_Slow
 
 // Heavy 
+// T_TFBot_Heavy_Armored
+// T_TFBot_Heavy_Armored_Bread_Champ
+// T_TFBot_Heavy_Armored_Eviction_Champ	
+// T_TFBot_Heavy_Armored_GRU_Champ
+// T_TFBot_Heavy_Armored_KGB_Champ
+// T_TFBot_Heavy_Armored_Maul_Champ	// Warrior Spirit Minicrit-on-Kill	
+// T_TFBot_Heavy_Armored_Maul_Champ_HibernatingBear 
+// T_TFBot_Heavy_Armored_SteelFist
+// T_TFBot_Heavy_Armored_SteelFist_Batt
+// T_TFBot_Heavy_Armored_SteelFist_Buff
+// T_TFBot_Heavy_Armored_SteelFist_Conch
+// T_TFBot_Heavy_Armored_SteelFist_Pusher
+
+// T_TFBot_Heavy_Batt
+// T_TFBot_Heavy_BrassBeast
+// T_TFBot_Heavy_BrassBeast_Nerfed
+// T_TFBot_Heavy_BrassBeast_Penetrate
+// T_TFBot_Heavy_Buff
+// T_TFBot_Heavy_Conch
+// T_TFBot_Heavy_Deflector
+// T_TFBot_Heavy_Deflector_Penetrate
+// T_TFBot_Heavy_Deflector_HealonHit
+// T_TFBot_Heavy_Deflector_HealonKill
+// T_TFBot_Heavy_Deflector_Ignite	// HuoLong
+// T_TFBot_Heavy_Deflector_KritonKill
+// T_TFBot_Heavy_Deflector_Push // has kb rage, dmg is halved but would recommend using Skill Easy on this
+// T_TFBot_Heavy_Deflector_Push_Reverse // pushes and glue target to the ground
+// T_TFBot_Heavy_HealOnHit
+// T_TFBot_Heavy_HealOnKill
+// T_TFBot_Heavy_HuoLong
+// T_TFBot_Heavy_HuoLong_Ignite // Ignites on hit, Firestarter
+// T_TFBot_Heavy_HuoLong_Penetrate
+// T_TFBot_Heavy_KritOnKill
+// T_TFBot_Heavy_Penetrate
+// T_TFBot_Heavy_Tomislav
+// T_TFBot_Heavy_Tomislav_BlackMarket // Clickin's Mafia Tomi, more ACC and moves faster 
+
+// T_TFBot_Heavy_Shotgun
+// T_TFBot_Heavy_Shotgun_Burst
+// T_TFBot_Heavy_Shotgun_Fast	// Fat scouts
+// T_TFBot_Heavy_Shotgun_Push
+// T_TFBot_Heavy_Shotgun_RapidFire
+// T_TFBot_Heavy_Shotgun_Single	// Semi from TF1
+// T_TFBot_Heavy_Shotgun_Double // Thumper from TF1
+// T_TFBot_Heavy_Shotgun_Penetrate
+
+// T_TFBot_Heavy_Bread_Champ // Gets Faster and Marks-for-Death, but hurts itself on each hit
+// T_TFBot_Heavy_Eviction_Champ	// Eviction MvM
+// T_TFBot_Heavy_KGB_Champ	
+// T_TFBot_Heavy_Maul_Champ	// Warrior Spirit MvM
+// T_TFBot_Heavy_Maul_Champ_HibernatingBear // [Old Set] 
+// T_TFBot_Heavy_SteelFist
+// T_TFBot_Heavy_SteelFist_Batt
+// T_TFBot_Heavy_SteelFist_Buff
+// T_TFBot_Heavy_SteelFist_Conch
+// T_TFBot_Heavy_SteelFist_Pusher
+
+// Notes for you nerds :3
+ Attribute TeleportToHint // If you want the Engi to make tele for you, instead of y'know WALKING, expecting the red ENGI to be BLIND?
+ TeleportWhere spawnbot (name the spawnbot that you want to TP)
+
+// Put Engi and Spy in Squad -- If you want them to attack people.
 
 // Engineer
+// T_TFBot_Engineer_TeleIn_Armored // Builds slower, but once fully setup- very hard to remove (Unless spy is involved)
 
-// Medic
+// T_TFBot_Engineer_Battle_Frontier 
+// T_TFBot_Engineer_Battle_Frontier_RevengeCrits
+// T_TFBot_Engineer_Battle_Ranger
+// T_TFBot_Engineer_Battle_Ranger_Burst
+// T_TFBot_Engineer_Battle_Ranger_Energy
+// T_TFBot_Engineer_Battle_Ranger_RapidFire
+// T_TFBot_Engineer_Battle_Shotgun
+// T_TFBot_Engineer_Battle_Shotgun_Double
+// T_TFBot_Engineer_Battle_Widowmaker
+// T_TFBot_Engineer_Battle_Widowmaker_RapidFire 
+// T_TFBot_Engineer_Battle_Gazer
+// T_TFBot_Engineer_Battle_Pistol
+// T_TFBot_Engineer_Battle_Shortcircuit // spawn these through mission_sniper
+
+// T_TFBot_Engineer_Teleports
+// T_TFBot_Engineer_Teleports_FastBuild
+
+// T_TFBot_Engineer_TeleIn	// PDQ, They just build tele + sentry
+// T_TFBot_Engineer_TeleIn_FastBuild
+// T_TFBot_Engineer_TeleIn_Giger	// Lower Sentry reach, but it deals more damage
+// T_TFBot_Engineer_TeleIn_Ranger
+// T_TFBot_Engineer_TeleIn_Gazer // Shoots Pomson-like Projectile
+// T_TFBot_Engineer_TeleIn_Wrangler	// Longer sentry reach, but weak to being sapped/stabbed
+
+// Medic (Uber recharge timer is scuffed due to overheal D:)
+// T_TFBot_Medic_Armored_Kritzkrieg
+// T_TFBot_Medic_Armored_Kritzkrieg_Shield
+// T_TFBot_Medic_Armored_Kritzkrieg_Shield_Extend
+// T_TFBot_Medic_Armored_Uber_Rapid
+// T_TFBot_Medic_Armored_Uber_Shield
+// T_TFBot_Medic_Armored_Uber_Shield_Extend // Lv2 shield
+// T_TFBot_Medic_Armored_Vacci_Bullet // Med 10% resistant, Patient 90%
+// T_TFBot_Medic_Armored_Vacci_Blast 
+// T_TFBot_Medic_Armored_Vacci_Fire
+// T_TFBot_Medic_Armored_Vacci_Bullet_Persist // Patient is 100% immune, but not the medic
+// T_TFBot_Medic_Armored_Vacci_Blast_Persist
+// T_TFBot_Medic_Armored_Vacci_Fire_Persist  
+
+// T_TFBot_Medic_Kritzkrieg // 621s Uber every 1.6-3.2s
+// T_TFBot_Medic_Kritzkrieg_Shield // 621s Uber every 1.6-3.2s; once hurt shield Lv1 is up for 12s
+// T_TFBot_Medic_Kritzkrieg_Shield_Extend // 621s Uber every 1.6-3.2s; once hurt shield Lv2 is up for 20s
+// T_TFBot_Medic_Uber_Blink // 2s Uber every 3.5-7s
+// T_TFBot_Medic_Uber_Extended // 12s Uber every 8-16s
+// T_TFBot_Medic_Uber_Placebo // NEVER ubers
+// T_TFBot_Medic_Uber_Rapid // 5s Uber every 8-16s
+// T_TFBot_Medic_Uber_Shield // 5s Uber every 8-16s; once hurt shield Lv1 is up for 12s
+// T_TFBot_Medic_Uber_Shield_Extend // 5s Uber every 8-16s; once hurt shield Lv2 is up for 20s
+// T_TFBot_Medic_Vacci_Bullet // Med 50% resistant, Patient 90%
+// T_TFBot_Medic_Vacci_Bullet_Persist // Full bullet immune, even after Med's DEAD
+// T_TFBot_Medic_Vacci_Blast
+// T_TFBot_Medic_Vacci_Blast_Persist
+// T_TFBot_Medic_Vacci_Fire
+// T_TFBot_Medic_Vacci_Fire_Persist
+
+// T_TFBot_Medic_Amputator // Leech target's health and spreads it around its allies
+// T_TFBot_Medic_Amputator_Gesture // Requires Rafradekmod to function
+// T_TFBot_Medic_Bonesaw
+// T_TFBot_Medic_Solemn // Deals more damage + knockback punts.
+// T_TFBot_Medic_Ubersaw // Crit on kill. Aggressive play.
+// T_TFBot_Medic_Vitasaw // Leech target's uber and charges
 
 // Sniper
 
