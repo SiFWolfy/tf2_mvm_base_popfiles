@@ -2,10 +2,12 @@
 A dump of templates from existing .pop that anyone could use.
 
 //
-Hiya, 
-The main reason this gist exist, is because someone might just happen to not know how to spawn a certain robot class in MvM
-in order to use it, you could simply copy the code and call it from the WaveSpawn
-well, either that or ask someone else to write the template for you.
-//
+Hiya, SiF here.
+This gist exists to serve to demonstrate the extent of vanilla MvM
 
-// Thanks for Reading
+Feel free to copy paste or use these Templates in your own mission.
+
+//
+ 
+// Credits to nys, lite, swordstone, daan, jug, PDAExpert, Yoovy for the HUD icons.
+// While these ideas are not original, leaving credit to said robot_sif.pop is appreciated.
