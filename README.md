@@ -10,4 +10,5 @@ Feel free to copy paste or use these Templates in your own mission.
 //
  
 // Credits to nys, lite, swordstone, daan, jug, PDAExpert, Yoovy for the HUD icons.
+
 // While these ideas are not original, leaving credit to said robot_sif.pop is appreciated.
