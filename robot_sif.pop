@@ -1,10 +1,11 @@
-// SiF's custom robots Reloaded v2
+// SiF's custom robots Reloaded v1.2
 
 // Get the assets here.
 // [github link]
 
 // List of the bots.
-// https://github.com/SiFWolfy/tf2_mvm_base_popfiles/blob/main/robot_templates_sif
+https://github.com/SiFWolfy/tf2_mvm_base_popfiles/blob/main/robot_templates_sif
+
 Mypopulation_uwu	{
 Templates {
 
@@ -4474,8 +4475,8 @@ T_TFBot_Scout_SodaPopper_NumberOneFan	{
 	Attributes HoldFireUntilFullReload
 	WeaponRestrictions	SecondaryOnly
 	ItemAttributes	{
-		ItemName "TF_WEAPON_GRENADELAUNCHER"
-		"is_passive_weapon" 1 
+		ItemName "TF_WEAPON_GRENADELAUNCHER" 
+		"is_passive_weapon" 1   // Forces Grenade launcher anim, they DO NOT Spin around
 		"fire rate bonus"	1.5
 		"faster reload rate"	0.8
 		"override projectile type" 27 
@@ -5236,7 +5237,7 @@ T_TFBot_Scout_SodaPopper_NumberOneFan	{
 	Item	"Warrior's Spirit"
 	Item	"The Buffalo Steak Sandvich"
 	Item	"Horace"
-	Health	900
+	Health	600
 	Scale	1.3
 	ItemAttributes	{
 		ItemName	"Warrior's Spirit"
@@ -6359,7 +6360,6 @@ T_TFBot_Engineer_Battle_Frontier {
 	}
 	}
 	
-	
 	T_TFBot_Engineer_Battle_Shortcircuit	{ 
 	Class Engineer
 	Skill Expert	
@@ -6608,6 +6608,530 @@ T_TFBot_Engineer_Battle_Frontier {
 	}
 	
 // Medic
+	T_TFBot_Medic_Battle_Needle	{
+	Class Medic
+	Skill Expert // Vanilla doesn't have AimLead D:
+	ClassIcon	medic_needle_sif
+	//ClassIcon	medic_syringe
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"damage bonus"	1.5
+		"faster reload rate" -1
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Barrage	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_bleed_sif
+	//ClassIcon	medic_syringe
+	Name	"Puncture Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"faster reload rate"	5
+		"fire rate bonus"	0.2
+		"clip size penalty" 4
+		"projectile spread angle penalty"	5
+	}
+	CharacterAttributes {
+		"damage bonus"	2.5
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Bleed	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_spammer_sif
+	//ClassIcon	medic_syringe
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	Item "The Blutsauger"
+	ItemAttributes	{
+		ItemName	"The Blutsauger"
+		"bleeding duration" 5
+		"faster reload rate" -1
+	}
+	CharacterAttributes {
+		"damage bonus"	0.8
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Burst	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_burst_sif
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"fire rate bonus"	0.2
+		"faster reload rate" 4
+		"clip size penalty" 0.25 // 10 needles
+	}
+	CharacterAttributes {
+		"damage bonus"	0.8
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Fast	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_fast_sif
+	Name	"Fast Battle Medic"
+	Item "The Overdose"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	"The Overdose"
+		"fire rate bonus"	0.5
+		"clip size penalty" 0.25 // 10 needles
+	}
+	CharacterAttributes {
+		"damage bonus"	0.25
+		"Projectile speed increased" 1.5
+		"speed_boost_on_hit" 3
+		"speed_boost_on_kill" 10
+		"move speed bonus" 1.4 // Mimics overdose on full effect
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_HealonHit	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_heal_sif
+	//ClassIcon	medic_syringe
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	Item "The Blutsauger"
+	ItemAttributes	{
+		ItemName	"The Blutsauger"
+		"faster reload rate" -1
+		"heal on hit for rapidfire" 25
+	}
+	CharacterAttributes {
+		"damage bonus"	1.5
+		"fire rate bonus"	0.75
+		"Projectile speed increased" 1.25
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_HealonKill	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_heal_sif
+	//ClassIcon	medic_syringe
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	Item "The Blutsauger"
+	ItemAttributes	{
+		ItemName	"The Blutsauger"
+		"faster reload rate" -1
+		"heal on kill" 100
+	}
+	CharacterAttributes {
+		"damage bonus"	1.5
+		"fire rate bonus"	0.75
+		"heal on hit for rapidfire" 50
+		"Projectile speed increased" 1.25
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Ignite	{
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_fire_sif
+	//ClassIcon	medic_syringe
+	Name	"Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	"TF_WEAPON_SYRINGEGUN_MEDIC"
+		"faster reload rate" -1
+		"Set DamageType Ignite" 1
+		"attach particle effect" 13 // scorching
+	}
+	CharacterAttributes {
+		"damage bonus"	1.75
+		"fire rate bonus"	0.75
+		"Projectile speed increased" 1.25
+	}
+	}
+
+	T_TFBot_Medic_Battle_Needle_KritonKill	{	
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_booster_sif
+	//ClassIcon	medic_syringe
+	Name	"Boosted Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	Item "The Overdose"
+	ItemAttributes	{
+		ItemName	"The Overdose"
+		"faster reload rate" -1
+		"critboost on kill" 5
+	}
+	CharacterAttributes {
+		"damage bonus"	1.5
+		"speed_boost_on_kill" 5
+		"fire rate bonus"	0.75
+		"heal on hit for rapidfire" 50
+		"Projectile speed increased" 1.25
+	}
+	}
+
+	T_TFBot_Medic_Battle_Needle_Mark	{	
+	Class Medic
+	Skill Expert 
+	ClassIcon	medic_needle_mark_sif
+	//ClassIcon	medic_syringe
+	Name	"Marking Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	"TF_WEAPON_SYRINGEGUN_MEDIC"
+		"faster reload rate" -1
+		"mark for death"	1
+	}
+	CharacterAttributes {
+		"fire rate bonus"	0.66
+		"Projectile speed increased" 1.5
+		"move speed bonus" 1.2
+	}
+	}
+
+	T_TFBot_Medic_Battle_Needle_Nerfed	{
+	Class Medic
+	Skill Normal
+	ClassIcon	medic_needle_sif
+	//ClassIcon	medic_syringe
+	Name	"Defective Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"fire rate bonus"	1.5
+		"faster reload rate" 3
+	}
+	CharacterAttributes	{
+		"damage bonus"	0.5
+		"Projectile speed increased" 0.6
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Push	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_needle_push_sif
+	//ClassIcon	medic_syringe
+	Name	"Pusher Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"fire rate bonus"	0.2
+		"faster reload rate" 4
+		"damage causes airblast" 1
+	}
+	CharacterAttributes	{
+		"damage bonus"	0.3
+		"Projectile speed increased" 1.3
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Needle_Slow	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_needle_slowdown_sif
+	//ClassIcon	medic_syringe
+	Name	"Cripple Battle Medic"
+	WeaponRestrictions	PrimaryOnly
+	ItemAttributes	{
+		ItemName	TF_WEAPON_SYRINGEGUN_MEDIC
+		"fire rate bonus"	0.2
+		"faster reload rate" 4
+		"slow enemy on hit major" 3
+	}
+	CharacterAttributes	{
+		"damage bonus"	0.3
+		"Projectile speed increased" 1.2
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow
+	Name "Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+		"kill forces attacker to laugh" 1 
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Bleed	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow
+	Name "Puncture Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	2.5
+		"bleeding duration" 5
+		"attach particle effect" 14 // GRN Scorching Flame
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+		"kill forces attacker to laugh" 1 
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Burst	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_burst
+	Name "Burst Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	0.1
+		"faster reload rate"	0.5
+		"clip size upgrade atomic"	3.0
+		"auto fires full clip"	1
+		"auto fires when full"	1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Burst_Penetrate	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_burst_penetration
+	Name "Penet. Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	0.1
+		"faster reload rate"	0.5
+		"clip size upgrade atomic"	3.0
+		"auto fires full clip"	1
+		"auto fires when full"	1
+		
+		"projectile penetration" 1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Ignite	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_fire
+	Name "Fire Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	2
+		"set Damagetype ignite" 1
+		"attach particle effect" 13 // Scorchin
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+		"kill forces attacker to laugh" 1 
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_KritonKill		{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_booster
+	Name "Booster Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+		"critboost on kill" 5
+		"projectile penetration" 1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"speed_boost_on_kill" 5
+		"Projectile speed increased" 1.4
+		"kill forces attacker to laugh" 1 
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Mark	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_mark
+	Name "Marking Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+		"mark for death" 1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+		"kill forces attacker to laugh" 1 
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Nerfed	{
+	Class Medic
+	Skill Normal
+	ClassIcon	medic_crossbow
+	Name "Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	2.5
+		"faster reload rate"	3
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1 // 38 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Penetrate	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_penetration
+	Name "Penet. Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+		"projectile penetration" 1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 57 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Milk	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_milk
+	Name "Milk Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	2.5
+		"mad milk syringes"	1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 0.5 // 18 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Push	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_push
+	Name "Push Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+		"damage causes airblast" 1
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 2 // 72 damage
+		"Projectile speed increased" 1.6
+	}
+	}
+	
+	T_TFBot_Medic_Battle_Crossbow_Slow	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_crossbow_slowdown
+	Name "Push Crossbow Medic"
+	Item "The Crusader's Crossbow"
+	//Item	"Berliner's Bucket Helm"
+	MaxVisionRange 1000
+	WeaponRestrictions PrimaryOnly
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"fire rate bonus"	1.5
+		"faster reload rate"	0.5
+		"slow enemy on hit major" 3
+	}
+	CharacterAttributes
+	{
+		"damage penalty" 1.5 // 72 damage
+		"Projectile speed increased" 1.4
+	}
+	}
+	
 	T_TFBot_Medic_Kritzkrieg	{
 	Class Medic
 	Skill Expert
@@ -6646,14 +7170,49 @@ T_TFBot_Engineer_Battle_Frontier {
 	Health 150
 	Item "The Kritzkrieg"
 	Item "Blighted Beak"
-	///Item "Kriegsmaschine-9000"
+	Item "Kriegsmaschine-9000"
 	Item "The Crusader's Crossbow"
 	Attributes SpawnWithFullCharge		
+	Attributes ProjectileShield
 	ItemAttributes	{
 		ItemName "The Kritzkrieg"
 		"heal rate bonus" 1.25
 		"uber duration bonus" 621 // h.
 		"ubercharge rate bonus" 25
+	}		
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow" 
+		"damage penalty" 2		
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+        "bot medic uber health threshold" 250 
+	//	"bot medic uber deploy delay duration" 0
+    }
+	}
+	
+	T_TFBot_Medic_Kritzkrieg_Shield_Extend	{
+	Class Medic
+	Skill Expert
+	ClassIcon medic_kritz_shield_armored_lite
+	Name "Kritzshield Medic"
+	Health 150
+	Item "The Kritzkrieg"
+	Item "Blighted Beak"
+	Item "Kriegsmaschine-9000"
+	Item "The Crusader's Crossbow"
+	Attributes ProjectileShield
+	Attributes SpawnWithFullCharge		
+	ItemAttributes	{
+		ItemName "The Kritzkrieg"
+		"heal rate bonus" 1.25
+		"uber duration bonus" 621 // :3
+		"ubercharge rate bonus" 25
+		
+		"generate rage on heal"	2
+		"increase buff duration"	1.66 // 20s shield
 	}		
 	ItemAttributes	{
 		ItemName "The Crusader's Crossbow" 
@@ -6680,7 +7239,7 @@ T_TFBot_Engineer_Battle_Frontier {
 	///Item "Kriegsmaschine-9000"
 	Item "Bunnyhopper's Ballistics Vest"
 	Item "The Crusader's Crossbow"
-	Attributes ProjectileShield
+	Attributes IgnoreEnemies
 	Attributes SpawnWithFullCharge		
 	ItemAttributes	{
 		ItemName "The Kritzkrieg"
@@ -6704,16 +7263,20 @@ T_TFBot_Engineer_Battle_Frontier {
     }
 	}
 	
-	T_TFBot_Medic_Kritzkrieg_Shield_Extend	{
+	T_TFBot_Medic_Armored_Kritzkrieg_Shield	{
 	Class Medic
 	Skill Expert
 	ClassIcon medic_kritz_shield_armored_lite
 	Name "Armored Kritzshield Medic"
-	Health 150
+	Health 650
+	Scale	1.3
 	Item "The Kritzkrieg"
 	Item "Blighted Beak"
+	Item "Bunnyhopper's Ballistics Vest"
 	///Item "Kriegsmaschine-9000"
 	Item "The Crusader's Crossbow"
+	Attributes IgnoreEnemies
+	Attributes ProjectileShield
 	Attributes SpawnWithFullCharge		
 	ItemAttributes	{
 		ItemName "The Kritzkrieg"
@@ -6721,8 +7284,8 @@ T_TFBot_Engineer_Battle_Frontier {
 		"uber duration bonus" 621 // :3
 		"ubercharge rate bonus" 25
 		
-		"generate rage on heal"	2
-		"increase buff duration"	1.66 // 20s shield
+		"generate rage on heal"	1
+		"increase buff duration"	1.25 // 15s shield
 	}		
 	ItemAttributes	{
 		ItemName "The Crusader's Crossbow" 
@@ -6749,6 +7312,8 @@ T_TFBot_Engineer_Battle_Frontier {
 	Item "Bunnyhopper's Ballistics Vest"
 	///Item "Kriegsmaschine-9000"
 	Item "The Crusader's Crossbow"
+	Attributes IgnoreEnemies
+	Attributes ProjectileShield
 	Attributes SpawnWithFullCharge		
 	ItemAttributes	{
 		ItemName "The Kritzkrieg"
@@ -6770,6 +7335,244 @@ T_TFBot_Engineer_Battle_Frontier {
         "bot medic uber health threshold" 250 
 	//	"bot medic uber deploy delay duration" 0
     }
+	}
+	
+	T_TFBot_Medic_Armored_QuickFix_Rapid	{
+	Class Medic
+	ClassIcon medic_armored
+	Name "Armored Quick-Fix Medic"
+	Health 650
+	Scale	1.3
+	Item "Field Practice"
+	Item	"Coldfront Carapace"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Attributes SpawnWithFullCharge
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 5
+		"uber duration bonus" -3
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 1
+		"bot medic uber health threshold" 100
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_Placebo	{
+	Class Medic
+	ClassIcon medic
+	Name "Quick-Fix Medic"
+	Item "Medicine Manpurse"
+	Item "Field Practice"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 0.5
+		"uber duration bonus" -3
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 1
+		"bot medic uber health threshold" 75
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_Heal	{
+	Class Medic
+	ClassIcon medic
+	Name "Quick-Fix Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Item "Field Practice"
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_BigHeal	{
+	Class Medic
+	ClassIcon medic_pop
+	Name "Super Heal Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Item "The Surgeon's Stahlhelm"
+	Skill Hard	
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 10
+		"ubercharge rate bonus" 0.1
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_BigHeal_Pop	{
+	Class Medic
+	ClassIcon medic_pop
+	Name "Super Heal Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Item "The Surgeon's Stahlhelm"
+	Skill Hard			
+	Attributes SpawnWithFullCharge
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 10
+		"ubercharge rate bonus" 0.1
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_Infinite	{
+	Class Medic
+	ClassIcon medic_inf
+	Name "Hyper Heal Medic"
+	Item "Medicine Manpurse"
+	Item "Cheater's Lament"
+	Item "The Quick-Fix"
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 0.25
+		"uber duration bonus" -7
+		"overheal expert" 2 // 2x class health
+		"overheal decay disabled" 1 // :3
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 5000
+	}
+	}
+	
+// Overheal expert ignores max hp penalty and only works on commons
+// Add "max health additive bonus" <overheal amount> to giants
+	
+	T_TFBot_Medic_QuickFix_OverHeal	{
+	Class Medic
+	ClassIcon medic_overheal
+	Name "Super Heal Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Item "The Surgeon's Stahlhelm"
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 10
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 0.25
+		"uber duration bonus" -7
+		"overheal expert" 4 // 2x class health
+		"overheal decay disabled" 1 // :3
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_Rapid	{
+	Class Medic
+	ClassIcon medic
+	Name "Quick-Fix Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Item "The Surgeon's Stahlhelm"
+	Attributes SpawnWithFullCharge
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 5
+		"uber duration bonus" -3
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 1
+		"bot medic uber health threshold" 75
+	}
+	}
+	
+	T_TFBot_Medic_QuickFix_Shield	{
+	Class Medic
+	ClassIcon medic_shield
+	Name "Quick-Fix Medic"
+	Item "Medicine Manpurse"
+	Item "The Crusader's Crossbow"
+	Item "The Quick-Fix"
+	Attributes SpawnWithFullCharge
+	Attributes ProjectileShield
+	Skill Expert			
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	ItemAttributes	{
+		ItemName "The Quick-Fix"
+		"ubercharge rate bonus" 5
+		"uber duration bonus" -3
+		
+		"generate rage on heal"	1
+		"increase buff duration"	1.25 // 15s shield
+	}
+	CharacterAttributes	{
+		"heal rate bonus" 1
+		"bot medic uber health threshold" 50
+		"bot medic uber deploy delay duration" 5
+	}
 	}
 	
 	T_TFBot_Medic_Uber_Blink	{
@@ -6803,6 +7606,67 @@ T_TFBot_Engineer_Battle_Frontier {
 	//	"mod weapon blocks healing" 1 // that should do it.
 		"patient overheal penalty" 0
 		"healing received penalty" 0.01
+	}
+	}
+	
+	T_TFBot_Medic_Uber_Extended	{
+	Class Medic
+	Health 130
+	ClassIcon "medic_uber"
+	Name "Flicker Uber Medic"
+	Skill Hard
+	Item "Berliner's Bucket Helm"
+	Item "The Crusader's Crossbow"
+	Attributes SpawnWithFullCharge
+	ItemAttributes	{
+		ItemName "TF_WEAPON_MEDIGUN"
+		"ubercharge rate bonus" 5 // 3s without uber
+		"uber duration bonus" 8 // Bigrock 12s uber
+	}
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+		"heal rate bonus" .1
+		"bot medic uber deploy delay duration" 2
+	}
+	}
+	
+	T_TFBot_Medic_Uber_Infinite	{
+	Class Medic
+	Health 130
+	ClassIcon "medic_uber_infinite"
+	Name "Infinite-Uber Medic"
+	Skill Hard
+	//Item "Halogen Head Lamp"
+	Item "Vintage Tyrolean"
+	Item "Cheater's Lament"
+	Item "The Crusader's Crossbow"
+	Item "Robin Walkers"
+	ItemAttributes	{
+		ItemName "Robin Walkers"
+		"set item tint RGB" 16738740 // Pink in HEX
+	}
+	ItemAttributes	{
+		ItemName "TF_WEAPON_MEDIGUN"
+		"ubercharge rate bonus" 0.5
+	}
+	ItemAttributes	{
+		ItemName "The Crusader's Crossbow"
+		"damage penalty" 1.5
+		"Reload time increased" .75 
+		"kill forces attacker to laugh" 1 
+		"Projectile speed increased" .5
+	}
+	CharacterAttributes	{
+		"heal rate bonus" .1
+		"bot medic uber deploy delay duration" 621
+		"airblast vulnerability multiplier" 2
+		"airblast vertical vulnerability multiplier" 2
 	}
 	}
 	
@@ -6959,6 +7823,7 @@ T_TFBot_Engineer_Battle_Frontier {
 	Item "The Crusader's Crossbow"
 	Item "Bunnyhopper's Ballistics Vest"
 	Attributes ProjectileShield
+	Attributes IgnoreEnemies
 	Attributes SpawnWithFullCharge
 	ItemAttributes	{
 		ItemName "TF_WEAPON_MEDIGUN"
@@ -6991,6 +7856,7 @@ T_TFBot_Engineer_Battle_Frontier {
 	Item "Bunnyhopper's Ballistics Vest"
 	Item "The Crusader's Crossbow"
 	Attributes ProjectileShield
+	Attributes IgnoreEnemies
 	Attributes SpawnWithFullCharge
 	ItemAttributes	{
 		ItemName "TF_WEAPON_MEDIGUN"
@@ -7367,23 +8233,657 @@ T_TFBot_Engineer_Battle_Frontier {
 	WeaponRestrictions MeleeOnly
 	ItemAttributes {
 		ItemName "The Ubersaw"
-		"slow enemy on hit major" 2
 		"critboost on kill" 5
 	}
 	CharacterAttributes	{
 		"speed_boost_on_kill" 5
+		"slow enemy on hit major" 1
+	}	
+	}
+	
+	T_TFBot_Medic_Ubersaw_Bleed	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_jug_ubersaw_bleed
+	Name "Krakensage Medic"
+	Item "The Ubersaw"
+	WeaponRestrictions MeleeOnly
+	ItemAttributes {
+		ItemName "The Ubersaw"
+		"slow enemy on hit major" 2
+		"bleeding duration" 5
+	}
+	CharacterAttributes	{
+		"speed_boost_on_kill" 5
+		"slow enemy on hit major" 3
+		"minicritboost on kill" 3
 	}	
 	}
 		
 	T_TFBot_Medic_Vitasaw	{
-			Class Medic
-			Name "Vitasaw Medic"
-			Item "The Vita-Saw"
-			Skill Expert
-			WeaponRestrictions MeleeOnly
-		}
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_vita_sif
+	Name "Vitasaw Medic"
+	Item "The Vita-Saw"
+	WeaponRestrictions MeleeOnly
+	ItemAttributes {
+		ItemName "The Vita-Saw"
+		"subtract victim medigun charge on hit" 15
+		"subtract victim cloak on hit" 20
+		"add uber charge on hit" 15
+	//	"damage all connected" 1 // :3
+	}
+	}
+	
+	T_TFBot_Medic_Vitasaw	{
+	Class Medic
+	Skill Hard
+	ClassIcon	medic_vita_sif
+	Name "Vitasaw Medic"
+	Item "The Vita-Saw"
+	WeaponRestrictions MeleeOnly
+	ItemAttributes {
+		ItemName "The Vita-Saw"
+		"bleeding duration" 8
+		"speed_boost_on_hit" 5
+	}
+	CharacterAttributes {
+		"speed_boost_on_kill" 15
+		"slow enemy on hit major" 2
+		"mark for death" 1
+	}
+	}
 
 // Sniper
+	T_TFBot_Sniper_Armored	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_armored
+	Name "Heavyweight Gauntlet"	
+	WeaponRestrictions MeleeOnly
+	Item "The Killing Gloves of Boxing"
+	Item "Pugilist's Protector"
+	Health	900
+	Scale	1.3
+	CharacterAttributes {
+		"move speed bonus"	.9
+		"damage force reduction" .1
+		"airblast vulnerability multiplier" 0
+	}
+	}
+	
+	T_TFBot_Sniper_Bazaar	{
+	Class Sniper
+	Skill Expert
+	//ClassIcon sniper_bazaar_sif
+	Name "Riflebot"	
+	Item "The Bazaar Bargain"
+	Item "Desert Marauder"
+	//Item "the all-father"
+	Item "The Tribalman's Shiv"
+	Item "The Cozy Camper"
+	//Attributes AlwaysFireWeapon
+	ItemAttributes	{
+		ItemName "The Bazaar Bargain"
+		"SRifle Charge rate increased" 4
+		"faster reload rate"	0.5
+	}
+	}
+	
+	T_TFBot_Sniper_Bazaar_LawrenceofAustralia	{
+	Class Sniper
+	Skill Expert
+	//ClassIcon sniper_bazaar_sif
+	Name "Marauder Sniper"	
+	Item "The Bazaar Bargain"
+	Item "Desert Marauder"
+	Item "The Shahanshah"
+	Item "The Cozy Camper"
+	//Attributes AlwaysFireWeapon
+	ItemAttributes	{
+		ItemName "The Bazaar Bargain"
+		"SRifle Charge rate increased" 10
+		"faster reload rate"	0.5
+	}
+	CharacterAttributes	{
+		"damage bonus" 2.0
+	}
+	}
+	
+	T_TFBot_Sniper_Bowman	{
+	Name "Pincushion Bowman"
+	Skill Hard
+	ClassIcon sniper_bow
+	WeaponRestrictions PrimaryOnly
+	Item "The Huntsman"
+	Item "Larrikin Robin"
+	ItemAttributes
+	{
+		ItemName "The Huntsman"
+		"damage bonus" 0.25
+	}
+	}
+	
+	T_TFBot_Sniper_Bowman_Nerfed	{
+	Name "Pincushion Bowman"
+	Skill Hard
+	ClassIcon sniper_bow
+	WeaponRestrictions PrimaryOnly
+	Item "The Huntsman"
+	Item "Larrikin Robin"
+	ItemAttributes
+	{
+		ItemName "The Huntsman"
+		"damage bonus" 0.25
+	}
+	}
+	
+	T_TFBot_Sniper_Bowman_RapidFire	{
+	Name "Rapid Fire Bowman"
+	Skill Hard
+	ClassIcon sniper_bow_spammer
+	WeaponRestrictions PrimaryOnly
+	Item "The Huntsman"
+	Item "Archer's Sterling"
+	ItemAttributes
+	{
+		ItemName "The Huntsman"
+		"damage bonus" 0.5
+		"Reload time increased" 0.75
+	}
+	}
+	
+	T_TFBot_Sniper_Charged	{
+	Class	Sniper
+	Skill	Easy
+	//ClassIcon	sniper_power
+	ClassIcon sniper_headshot
+	Name	"Charged Sniper"
+	Item	"The AWPer Hand"
+	Attributes	AlwaysCrit
+	ItemAttributes	{
+		ItemName	"The AWPer Hand"
+		"damage bonus" 3.0
+		"sniper charge per sec"	10.0
+		"Reload time increased" 4
+		"fire rate penalty" 4
+	}
+	}
+	
+	T_TFBot_Sniper_Classic	{
+	Class Sniper
+	Skill Expert
+	ClassIcon sniper
+	Name "Classic Sniper"
+	MaxVisionRange 800
+	Attributes AlwaysFireWeapon
+	WeaponRestrictions PrimaryOnly	
+	Item "The Classic"
+	Item "The Wet Works"
+	Item "The Conspicuous Camouflage"
+	Item "The Cammy Jammies"
+	ItemAttributes	{
+		ItemName "The Classic"
+		"damage bonus"	2.0
+		"sniper crit no scope" 1
+		"sniper no headshot without full charge" 0
+		"sniper no headshots" 0
+		"sniper full charge damage bonus" 2.0
+	}
+	ItemAttributes	{
+		ItemName "TF_WEAPON_SMG"
+		"is_passive_weapon" 1
+		"fire rate penalty" 10
+		"reload time increased hidden" 1.5
+		"damage bonus" 5.2 // exactly 150
+		"crit kill will gib" 1
+		"crit vs burning players" 1
+		"crit vs non burning players" 1
+	//	"custom kill icon" classic
+		"sniper fires tracer" 1
+	//	"crits_become_minicrits" 1
+	}
+	CharacterAttributes	{
+		"move speed penalty" 1.2
+	}
+	}
+	
+	T_TFBot_Sniper_CozyCamper	{	
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_camper
+	Name "Camper Sniper"
+	MaxVisionRange 1200
+	Item "The Cozy Camper"
+	ItemAttributes
+	{
+		ItemName	TF_WEAPON_SNIPERRIFLE
+		"heal on hit for rapidfire"	125
+	}
+	}
+	
+	T_TFBot_Sniper_ExplosiveHeadshot	{
+	Class	Sniper
+	Skill	Hard
+	ClassIcon sniper_headshot_deadly
+	Name	"EH. Sniper"
+	Item	"The Hitman's Heatmaker"
+	Item	"The Anger"
+	//Attributes	AlwaysCrit
+	ItemAttributes	{
+		ItemName	"The Hitman's Heatmaker"
+		"explosive sniper shot"	1
+		"dmg penalty vs players" 0.33 // 50
+		"Reload time increased" 4
+		"fire rate penalty" 4
+	}
+	}
+	
+	T_TFBot_Sniper_Headshot	{
+	Class	Sniper
+	Skill	Expert
+	ClassIcon sniper_headshot
+	Name	"Headshot Sniper"
+	Item	"The AWPer Hand"
+	Item "The Shahanshah"
+	Item "The Dread Hiding Hood"
+	Item "The Conspicuous Camouflage"
+	//Attributes	AlwaysCrit
+	ItemAttributes	{
+		ItemName	"The AWPer Hand"
+		"Reload time increased" 4
+		"fire rate penalty" 4	
+	}
+	ItemAttributes	{
+	ItemName "The Shahanshah"
+		"damage bonus" 1.5
+		"fire rate penalty" 2
+		"dmg bonus while half dead" 1.3
+		"dmg penalty while half alive" 0.2
+	}
+	CharacterAttributes {
+		"damage bonus" 2 // 50
+		"headshot damage increase" 3
+		"SRifle Charge rate decreased" 0.1
+		"sniper only fire zoomed" 1
+		"slow enemy on hit major" 2
+		"projectile penetration" 1
+	}
+	}
+	
+	T_TFBot_Sniper_Machina	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_penetrator
+	Name "Machina Sniper"
+	MaxVisionRange 1200
+	Item	"The Machina"
+	Item "Corona Australis"
+	Item "Starduster"
+	ItemAttributes	{
+		ItemName "The Machina"
+		"sniper charge per sec" 10
+		"Reload time increased" 2
+		"fire rate penalty" 2.5
+	}
+	}
+	
+	T_TFBot_Sniper_Machina_Deathray	{
+	Class Sniper
+	Skill Expert
+	ClassIcon sniper_penetrator
+	Name "Starbreaker Sniper"
+	MaxVisionRange 1200
+	Item	"Shooting Star"
+	Item	"The crosslinker's coil"
+	Item	"The doublecross-comm"
+	Item "Starduster"
+	Attributes AlwaysCrit
+	ItemAttributes	{
+		ItemName "The Machina"
+		"sniper charge per sec" 10
+		"Reload time increased" 2
+		"fire rate penalty" 8
+		"explosive sniper shot"	5.0
+		"dmg vs players" 0.2
+	}
+	}
+	
+	T_TFBot_Sniper_Machina_NoFire	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_penetrator
+	Name "Clickin' Sniper"
+	MaxVisionRange 1200
+	Item "The Machina"
+	Item "Ghastly Gibus"
+	Attributes AlwaysFireWeapon
+	}
+	
+	T_TFBot_Sniper_Mark	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_mark_sif
+	Name "Marking Sniper"
+	Item "The AWPer Hand"
+	Item "The Hat With No Name"
+	ItemAttributes	{
+		ItemName "The AWPer Hand"
+		"damage penalty" 0.1 // 5 DMG
+		"mark for death" 1
+	}
+	}	
+	
+	T_TFBot_Sniper_Push	{
+	Class Sniper
+	Skill Expert
+	ClassIcon sniper_blast
+	Name "Blastaway Sniper"
+	Item "The AWPer Hand"
+	Item "dec2014 hunter_ushanka" // Professional Ushanka
+	Item "Down Tundra Coat"
+	ItemAttributes	{
+		ItemName "The AWPer Hand"
+		"damage penalty" 0.4 // 20 DMG
+		"fire rate bonus" 3
+		"SRifle Charge rate decreased" 0.5
+		"damage causes airblast" 1
+		// "mark for death" 1
+	}
+	}	
+	
+	T_TFBot_Sniper_Pull	{
+	Class Sniper
+	Skill Expert
+	ClassIcon sniper_blast_inverse
+	Name "Harpoon Sniper"
+	Item "The Bazaar Bargain"
+	Item "The Lone Star"
+	Item "Rifleman's Regalia"
+	ItemAttributes	{
+		ItemName "The Bazaar Bargain"
+		"damage penalty" 0.4 // 20 DMG
+		"fire rate bonus" 10
+		"apply z velocity on damage"	250
+		"apply look velocity on damage"	-1000
+		"faster reload rate" 2
+	}
+	}	
+	
+	T_TFBot_Sniper_Ignite 	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_flame
+	Name "Incend. Sniper"	
+	MaxVisionRange 1200
+	Item	"The Flamingo Kid"
+	//Item "harvest_sniperrifle_pumpkinpatch"
+	ItemAttributes
+	{
+		ItemName	TF_WEAPON_SNIPERRIFLE
+		"Set DamageType Ignite" 1
+		"attach particle effect" 13
+	}
+	}
+	
+	T_TFBot_Sniper_Razorback_Stock	{
+	ClassIcon	sniper_razorback_sif
+	Name	"Razorback Sniper"
+	Class	Sniper
+	Skill	Hard
+	MaxVisionRange	1200
+	Item	"The Razorback"
+	Item	"Crocodile Mun-Dee"
+	}
+	
+	T_TFBot_Sniper_Razorback_Sydney	{
+	ClassIcon	sniper_sydneysleeper
+	Name	"Sydney Sniper"
+	Class	Sniper
+	Skill	Expert
+	MaxVisionRange	1200
+	Item	"The Sydney Sleeper"
+	Item	"The Razorback"
+	Item	"Crocodile Mun-Dee"
+	}
+	
+	T_TFBot_Sniper_Sydney_Crocostyle	{
+	Class Sniper
+	Skill	Expert
+	ClassIcon sniper_sydneysleeper
+	Name "Croc-Sydney Sniper"	
+	Health 175	
+	Item "Darwin's Danger Shield"
+	Item "Ol' Snaggletooth"
+	Item "The Bushwacka"
+	CharacterAttributes {
+	ItemName "Darwin's Danger Shield"
+		"sniper charge per sec"     10.0
+		"SET BONUS: no death from headshots" 1
+		// TOTAL REVERT to Mann-conomy!
+		"dmg taken from fire reduced" 1
+		"afterburn immunity" 0
+		"dmg taken from blast reduced" 0.85
+		"dmg taken from bullets increased" 1.2
+		"max health additive bonus" 25
+	}
+	}
+	
+	T_TFBot_Sniper_Carbine	{
+	Class	Sniper
+	Skill Normal
+	ClassIcon	sniper_carbine
+	Name	"Carbine Sniper"			
+	Item	"The Cleaner's Carbine"
+	Item	"The Bare Necessities"
+	WeaponRestrictions	SecondaryOnly
+	ItemAttributes	{
+		ItemName	"the cleaner's carbine"
+		"critboost on kill"	5
+	}
+	CharacterAttributes {
+		"damage bonus"	2
+		"weapon spread bonus"	0.5
+	}
+	}
+	
+	T_TFBot_Sniper_Carbine_Push	{
+	Class	Sniper
+	Skill Normal
+	ClassIcon	sniper_carbine_blast
+	Name	"Carbine Sniper"			
+	Item	"The Cleaner's Carbine"
+	Item	"Letch's led"
+	WeaponRestrictions	SecondaryOnly
+	ItemAttributes	{
+		ItemName	"the cleaner's carbine"
+		"critboost on kill"	5
+		"damage causes airblast"	1
+	}
+	CharacterAttributes {
+		"damage bonus"	1.5
+		"weapon spread bonus"	0.5
+	}
+	}
+	
+	T_TFBot_Sniper_Jarate_  {
+	Class Sniper
+	Name "Jarate Sniper"
+	Skill Expert
+	ClassIcon sniper_jarate
+	Item "Jarate"
+	Item "The Bushwacka"
+	Item "Desert Marauder" // Marauder belt doesn't work, we use this one. Gosh darn valve refusing to finish their stupid anim
+	Item "The Jarmaments"
+	WeaponRestrictions SecondaryOnly
+	Attributes AlwaysFireWeapon
+	CharacterAttributes	{
+		"effect bar recharge rate increased" -2
+		"fire rate penalty" 10
+	}
+	}
+	
+	T_TFBot_Sniper_Jarate_RapidFire  {
+	Class Sniper
+	Name "Jar Sniper"
+	Skill Expert
+	ClassIcon sniper_jarate
+	Item "Jarate"
+	Item "The Bushwacka"
+	Item "Desert Marauder" // Marauder belt doesn't work, we use this one. Gosh darn valve refusing to finish their stupid anim
+	Item "The Jarmaments"
+	WeaponRestrictions SecondaryOnly
+	Attributes AlwaysFireWeapon
+	CharacterAttributes	{
+		"effect bar recharge rate increased" -2
+		"fire rate penalty" 2.5
+	}
+	}
+	
+	T_TFBot_Sniper_Jarate_Slow  {
+	Class Sniper
+	Name "Slow Jar Sniper"
+	Skill Expert
+	ClassIcon sniper_jarate
+	Item "The Self-Aware Beauty Mark"
+	Item "The Bushwacka"
+	Item "Desert Marauder" // Marauder belt doesn't work, we use this one. Gosh darn valve refusing to finish their stupid anim
+	Item "The Jarmaments"
+	WeaponRestrictions SecondaryOnly
+	Attributes AlwaysFireWeapon
+	CharacterAttributes	{
+		"effect bar recharge rate increased" -2
+		"fire rate penalty" 2.5
+		"applies snare effect" 0.35
+	}
+	}
+	
+	T_TFBot_Sniper_SMG	{
+	Class	Sniper
+	Skill	Easy		
+	ClassIcon	sniper_smg_sif
+	Name	"Crazed Gunman"
+	WeaponRestrictions	SecondaryOnly
+	ItemAttributes {
+		ItemName	TF_WEAPON_SMG
+		"weapon spread bonus" 0.5
+		"fire rate bonus" 1.2
+	}
+	}
+	
+	T_TFBot_Sniper_SMG_RapidFire	{
+	Class	Sniper
+	Skill	Easy		
+	ClassIcon	sniper_smg_spammer_sif
+	Name	"Crazed Gunman"
+	WeaponRestrictions	SecondaryOnly
+	ItemAttributes {
+		ItemName	TF_WEAPON_SMG
+		"weapon spread bonus" 0.5
+		"fire rate bonus" 1.2
+	}
+	}
+	
+	T_TFBot_Sniper_SMG_Push	{
+	Class	Sniper
+	Skill	Easy		
+	ClassIcon	sniper_smg_blast_sif
+	Name	"Crazed Gunman"
+	WeaponRestrictions	SecondaryOnly
+	ItemAttributes {
+		ItemName	TF_WEAPON_SMG
+		"weapon spread bonus" 0.5
+		"fire rate bonus" 1.2
+		"damage causes airblast"	1
+	}
+	}
+	
+	T_TFBot_Sniper_Club	{
+	Class Sniper
+	Skill Hard
+	ClassIcon  "sniper_kukri_lite"
+	Name "Kukri Sniper"
+	WeaponRestrictions MeleeOnly
+	}
+	
+	T_TFBot_Sniper_Bushwacka	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_bushwacka
+	Name "Bushwack Sniper"		
+	WeaponRestrictions MeleeOnly
+	Item "Darwin's Danger Shield"
+	Item "Crocodile Mun-Dee"
+	Item "The Bushwacka"
+	}
+	
+	
+	T_TFBot_Sniper_Bushwacka_Crocostyle	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_bushwacka
+	Name "Croc-o-wack Sniper"		
+	WeaponRestrictions MeleeOnly
+	Item "Darwin's Danger Shield"
+	Item "Ol' Snaggletooth"
+	Item "The Bushwacka"
+	CharacterAttributes	{
+		"afterburn immunity" 0
+		"SET BONUS: no death from headshots" 1
+		"dmg taken from blast reduced" 0.85
+		"dmg taken from bullets increased" 1.2
+		"max health additive bonus" 25
+	}
+	}
+	
+	T_TFBot_Sniper_Shah	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_jug_shahanshah
+	Name "Marauder Sniper"	
+	Item "Desert Marauder"
+	Item "The Shahanshah"
+	Item "The Cozy Camper"
+	WeaponRestrictions MeleeOnly
+	//Attributes AlwaysFireWeapon
+	CharacterAttributes	{
+		"damage bonus" 1.5
+	}
+	}
+	
+	T_TFBot_Sniper_Shiv	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_jug_trivalshiv
+	Name "Shiv Sniper"
+	WeaponRestrictions MeleeOnly
+	Item "The Tribalman's Shiv"
+	Item "The Swagman's Swatter"
+	Item "The Cozy Camper"
+	ItemAttributes	{
+		ItemName	"the tribalman's shiv"
+		"bleeding duration"	8
+		"damage bonus" 1
+	}
+	}
+	
+	T_TFBot_Sniper_Shiv_Mark	{
+	Class Sniper
+	Skill Hard
+	ClassIcon sniper_jug_trivalshiv_death
+	Name "Shiv Sniper"
+	WeaponRestrictions MeleeOnly
+	Item "The Tribalman's Shiv"
+	Item "The Swagman's Swatter"
+	Item "The Cozy Camper"
+	ItemAttributes	{
+		ItemName	"the tribalman's shiv"
+		"damage bonus" 1
+		"bleeding duration"	5
+		"mark for death"	1
+	}
+	}
 
 // Spy
 
