@@ -1,5 +1,18 @@
 // List of SiF's Custom Robot Templates
 
+// BUSTERS
+// T_TFBot_SentryBuster_AutoJump		// Yup. It jumps. What? It's pointless? Because it is.
+// T_TFBot_SentryBuster_BannerBattalion
+// T_TFBot_SentryBuster_BannerBuff
+// T_TFBot_SentryBuster_BannerConch
+// T_TFBot_SentryBuster_Ball		// VAR-
+// T_TFBot_SentryBuster_Bonk		 // VAR-, Bonk particles and fakes detonation
+// T_TFBot_SentryBuster_Disguised	// VAR-, Blends in similar to support spies
+// T_TFBot_SentryBuster_FakeDetonation
+// T_TFBot_SentryBuster_Parachute
+// T_TFBot_SentryBuster_Reinforced
+// T_TFBot_SentryBuster_Sapper
+// T_TFBot_SentryBuster_Wrecker		// Breaks the sentry instead of detonating. No don't worry, it doesn't target players
 
 // SMOL
 // Scout
