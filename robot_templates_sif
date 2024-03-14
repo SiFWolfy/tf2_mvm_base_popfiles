@@ -341,6 +341,37 @@
 // T_TFBot_Engineer_TeleIn_Wrangler	// Longer sentry reach, but weak to being sapped/stabbed
 
 // Medic (Uber recharge timer is scuffed due to overheal D:)
+// T_TFBot_Medic_Battle_Needle // Default
+// T_TFBot_Medic_Battle_Needle_Barrage // more on comical side, random proj needle isn't even scary on non-giant
+// T_TFBot_Medic_Battle_Needle_Bleed // evil caustic,,,
+// T_TFBot_Medic_Battle_Needle_Burst
+// T_TFBot_Medic_Battle_Needle_Fast // Overdose. Feed it some form of crits for full effect
+// T_TFBot_Medic_Battle_Needle_HealonHit // Blutsauger
+// T_TFBot_Medic_Battle_Needle_HealonKill
+// T_TFBot_Medic_Battle_Needle_Ignite
+// T_TFBot_Medic_Battle_Needle_KritonKill
+// T_TFBot_Medic_Battle_Needle_Laugh // don't. Stop- no. D:
+// T_TFBot_Medic_Battle_Needle_Mark
+// T_TFBot_Medic_Battle_Needle_Milk
+// T_TFBot_Medic_Battle_Needle_Nerfed
+// T_TFBot_Medic_Battle_Needle_Push
+// T_TFBot_Medic_Battle_Needle_RapidFire <-- I tried to give this penet, didn't work as I wanted
+// T_TFBot_Medic_Battle_Needle_Slow
+// T_TFBot_Medic_Battle_Crossbow
+// T_TFBot_Medic_Battle_Crossbow_Bleed
+// T_TFBot_Medic_Battle_Crossbow_Burst
+// T_TFBot_Medic_Battle_Crossbow_Burst_Penetrate
+// T_TFBot_Medic_Battle_Crossbow_Ignite
+// T_TFBot_Medic_Battle_Crossbow_KritonKill
+// T_TFBot_Medic_Battle_Crossbow_Mark
+// T_TFBot_Medic_Battle_Crossbow_Penetrate
+// T_TFBot_Medic_Battle_Crossbow_Milk
+// T_TFBot_Medic_Battle_Crossbow_Nerfed
+// T_TFBot_Medic_Battle_Crossbow_Penetrate
+// T_TFBot_Medic_Battle_Crossbow_Push
+// T_TFBot_Medic_Battle_Crossbow_RapidFire
+// T_TFBot_Medic_Battle_Crossbow_Slow
+
 // T_TFBot_Medic_Armored_Kritzkrieg
 // T_TFBot_Medic_Armored_Kritzkrieg_Shield
 // T_TFBot_Medic_Armored_Kritzkrieg_Shield_Extend
@@ -354,14 +385,23 @@
 // T_TFBot_Medic_Armored_Vacci_Blast_Persist
 // T_TFBot_Medic_Armored_Vacci_Fire_Persist  
 
-// T_TFBot_Medic_Kritzkrieg // 621s Uber every 1.6-3.2s
-// T_TFBot_Medic_Kritzkrieg_Shield // 621s Uber every 1.6-3.2s; once hurt shield Lv1 is up for 12s
-// T_TFBot_Medic_Kritzkrieg_Shield_Extend // 621s Uber every 1.6-3.2s; once hurt shield Lv2 is up for 20s
+// T_TFBot_Medic_Kritzkrieg // 10min Kritz every 1.6-3.2s
+// T_TFBot_Medic_Kritzkrieg_Shield // 10min Kritz every 1.6-3.2s; once hurt shield Lv1 is up for 15s
+// T_TFBot_Medic_Kritzkrieg_Shield_Extend // 10min Kritz every 1.6-3.2s; once hurt shield Lv2 is up for 20s
+// T_TFBot_Medic_QuickFix_Heal
+// T_TFBot_Medic_QuickFix_BigHeal
+// T_TFBot_Medic_QuickFix_BigHeal_Pop
+// T_TFBot_Medic_QuickFix_OverHeal
+// T_TFBot_Medic_QuickFix_Infinite
+// T_TFBot_Medic_QuickFix_Placebo // NEVER MegaHeals
+// T_TFBot_Medic_QuickFix_Rapid // 5s MegaHeal every 8-16s
+// T_TFBot_Medic_QuickFix_Shield // Megaheal is delayed by 5s; once hurt shield Lv1 is up for 15s
 // T_TFBot_Medic_Uber_Blink // 2s Uber every 3.5-7s
 // T_TFBot_Medic_Uber_Extended // 12s Uber every 8-16s
+// T_TFBot_Medic_Uber_Infinite
 // T_TFBot_Medic_Uber_Placebo // NEVER ubers
 // T_TFBot_Medic_Uber_Rapid // 5s Uber every 8-16s
-// T_TFBot_Medic_Uber_Shield // 5s Uber every 8-16s; once hurt shield Lv1 is up for 12s
+// T_TFBot_Medic_Uber_Shield // 5s Uber every 8-16s; once hurt shield Lv1 is up for 15s
 // T_TFBot_Medic_Uber_Shield_Extend // 5s Uber every 8-16s; once hurt shield Lv2 is up for 20s
 // T_TFBot_Medic_Vacci_Bullet // Med 50% resistant, Patient 90%
 // T_TFBot_Medic_Vacci_Bullet_Persist // Full bullet immune, even after Med's DEAD
@@ -375,9 +415,51 @@
 // T_TFBot_Medic_Bonesaw
 // T_TFBot_Medic_Solemn // Deals more damage + knockback punts.
 // T_TFBot_Medic_Ubersaw // Crit on kill. Aggressive play.
-// T_TFBot_Medic_Vitasaw // Leech target's uber and charges
+// T_TFBot_Medic_Ubersaw_Bleed
+// T_TFBot_Medic_Vitasaw // Leech target's uber and charges for itself
+// T_TFBot_Medic_Vitasaw_SelfUber // Leech target's uber and charges for itself
+// T_TFBot_Medic_Vitasaw_Bleed // Trade offer, it gains speed -><- you get BlackPlague.
+
 
 // Sniper
+// T_TFBot_Sniper_Armored
+// T_TFBot_Sniper_Bazaar
+// T_TFBot_Sniper_Bazaar_LawrenceofAustralia // Charges faster by default
+// T_TFBot_Sniper_Charged // Easy AI, but if they hit.. you die.
+// T_TFBot_Sniper_Classic
+// T_TFBot_Sniper_CozyCamper
+// T_TFBot_Sniper_ExplosiveHeadshot // 100 dmg EH
+// T_TFBot_Sniper_Headshot
+// T_TFBot_Sniper_Ignite
+// T_TFBot_Sniper_Machina
+// T_TFBot_Sniper_Machina_Deathray // Clickin's Deathray 1shot+EH thru resist.
+// T_TFBot_Sniper_Machina_NoFire
+// T_TFBot_Sniper_Mark
+// T_TFBot_Sniper_Push
+// T_TFBot_Sniper_Pull
+// T_TFBot_Sniper_Razorback_Stock
+// T_TFBot_Sniper_Razorback_Sydney
+// T_TFBot_Sniper_Sydney_Crocostyle // [Old set] Headshot immune
+
+// T_TFBot_Sniper_Bowman
+// T_TFBot_Sniper_Bowman_Nerfed
+// T_TFBot_Sniper_Bowman_RapidFire
+
+// T_TFBot_Sniper_Carbine
+// T_TFBot_Sniper_Carbine_Push
+// T_TFBot_Sniper_Jarate_
+// T_TFBot_Sniper_Jarate_RapidFire 
+// T_TFBot_Sniper_Jarate_Slow
+// T_TFBot_Sniper_SMG
+// T_TFBot_Sniper_SMG_Push
+// T_TFBot_Sniper_SMG_RapidFire
+
+// T_TFBot_Sniper_Bushwacka
+// T_TFBot_Sniper_Bushwacka_Crocostyle // [Old set] Bullet immune instead of fire immune
+// T_TFBot_Sniper_Club // Kukri is referred as club in the index
+// T_TFBot_Sniper_Shah
+// T_TFBot_Sniper_Shiv
+// T_TFBot_Sniper_Shiv_Mark
 
 // Spy
 
