@@ -4,15 +4,18 @@
 // T_TFBot_SentryBuster_AutoJump		// Yup. It jumps. What? It's pointless? Because it is.
 // T_TFBot_SentryBuster_BannerBattalion
 // T_TFBot_SentryBuster_BannerBuff
-// T_TFBot_SentryBuster_BannerConch
+// T_TFBot_SentryBuster_BannerConcheror
 // T_TFBot_SentryBuster_Ball		// VAR-
 // T_TFBot_SentryBuster_Bonk		 // VAR-, Bonk particles and fakes detonation
 // T_TFBot_SentryBuster_Disguised	// VAR-, Blends in similar to support spies
 // T_TFBot_SentryBuster_FakeDetonation
+// T_TFBot_SentryBuster_Jarate
+// T_TFBot_SentryBuster_Milk
 // T_TFBot_SentryBuster_Parachute
 // T_TFBot_SentryBuster_Reinforced
 // T_TFBot_SentryBuster_Sapper
-// T_TFBot_SentryBuster_Wrecker		// Breaks the sentry instead of detonating. No don't worry, it doesn't target players
+// T_TFBot_SentryBuster_Swarm
+// T_TFBot_SentryBuster_Wrecker		// Breaks the sentry instead of detonating. No don't worry, it doesn't target player.
 
 // SMOL
 // Scout
@@ -26,7 +29,7 @@
 // T_TFBot_Scout_Blaster_PublicEnemy	// VAR-C Massive Pellet Bonus (Clickin' Blasters)
 // T_TFBot_Scout_Blaster_Rush	// VAR-D Super Scout Blasters
 // T_TFBot_Scout_Fan		// VAR-A Knocks you back
-// T_TFBot_Scout_Fan_Doubletap // VAR-B Fires clip at once
+// T_TFBot_Scout_Fan_Doubletap // VAR-B Fires all clip at once
 // T_TFBot_Scout_Fan_Push	// VAR-C Knocks you up
 // T_TFBot_Scout_Fan_Reversed	// VAR-D Pulls you towards them
 // T_TFBot_Scout_Fan_Freeze	// VAR-E Freezes your input (Tindall's OverclockedBot concept)
@@ -134,6 +137,10 @@
 // T_TFBot_Soldier_Pickax_Batt
 // T_TFBot_Soldier_Pickax_Buff
 // T_TFBot_Soldier_Pickax_Conch
+// T_TFBot_Soldier_Samurai
+// T_TFBot_Soldier_Samurai_Batt
+// T_TFBot_Soldier_Samurai_Buff
+// T_TFBot_Soldier_Samurai_Conch
 // T_TFBot_Soldier_Whipper
 // T_TFBot_Soldier_Whipper_Batt
 // T_TFBot_Soldier_Whipper_Buff
@@ -146,7 +153,7 @@
 
 // T_TFBot_Pyro_Airblast
 // T_TFBot_Pyro_Airblast_Hyper // 0.05 refire. Peak asshat
-// T_TFBot_Pyro_Airblast_Push // Forces m2, ignores proj
+// T_TFBot_Pyro_Airblast_Pusher // Forces m2, ignores proj
 // T_TFBot_Pyro_Backburn
 // T_TFBot_Pyro_Batt
 // T_TFBot_Pyro_Batt_NoAirblast
@@ -186,6 +193,10 @@
 // T_TFBot_Pyro_Flare_Punch // Fast flares. Kills burning
 // T_TFBot_Pyro_Flare_RapidFire
 // T_TFBot_Pyro_Flare_Incendiary
+// T_TFBot_Pyro_Gas		// Nothing, just ignites
+// T_TFBot_Pyro_Gas_Afterburn // Deals x10 Burn if ignited
+// T_TFBot_Pyro_Gas_Explode // Does 100 + Burn
+// T_TFBot_Pyro_Gas_Slow
 // T_TFBot_Pyro_Jetpack_Stun
 // T_TFBot_Pyro_Manmelter
 // T_TFBot_Pyro_Homewrecker	
@@ -236,7 +247,7 @@
 // T_TFBot_Demoman_Scatter_Blast
 
 // T_TFBot_Demoman_Sticky
-// T_TFBot_Demoman_Barrage	// Fires all 14 scotres stickies before detonating
+// T_TFBot_Demoman_Sticky_Barrage	// Fires all 14 scotres stickies before detonating
 // T_TFBot_Demoman_Sticky_Burst	// Fires 4 sticky at a time
 // T_TFBot_Demoman_Sticky_Charged	// Fires slower sticky with high damage
 // T_TFBot_Demoman_Sticky_Quickie
@@ -275,6 +286,7 @@
 // T_TFBot_Heavy_Armored_SteelFist_Buff
 // T_TFBot_Heavy_Armored_SteelFist_Conch
 // T_TFBot_Heavy_Armored_SteelFist_Pusher
+// T_TFBot_Heavy_Armored_SteelFist_Titanium
 
 // T_TFBot_Heavy_Batt
 // T_TFBot_Heavy_BrassBeast
@@ -289,16 +301,21 @@
 // T_TFBot_Heavy_Deflector_Ignite	// HuoLong
 // T_TFBot_Heavy_Deflector_KritonKill
 // T_TFBot_Heavy_Deflector_Push // has kb rage, dmg is halved but would recommend using Skill Easy on this
-// T_TFBot_Heavy_Deflector_Push_Reverse // pushes and glue target to the ground
+// T_TFBot_Heavy_Deflector_Push_Reverse // pulls and glues target to the ground
 // T_TFBot_Heavy_HealOnHit
 // T_TFBot_Heavy_HealOnKill
 // T_TFBot_Heavy_HuoLong
 // T_TFBot_Heavy_HuoLong_Ignite // Ignites on hit, Firestarter
 // T_TFBot_Heavy_HuoLong_Penetrate
 // T_TFBot_Heavy_KritOnKill
+// T_TFBot_Heavy_Natascha
+// T_TFBot_Heavy_Natascha_Push
+// T_TFBot_Heavy_Natascha_Reversed
 // T_TFBot_Heavy_Penetrate
 // T_TFBot_Heavy_Tomislav
 // T_TFBot_Heavy_Tomislav_BlackMarket // Clickin's Mafia Tomi, more ACC and moves faster 
+// T_TFBot_Heavy_Tomislav_Penetrate
+// T_TFBot_Heavy_Tomislav_Push
 
 // T_TFBot_Heavy_Shotgun
 // T_TFBot_Heavy_Shotgun_Burst
@@ -312,13 +329,15 @@
 // T_TFBot_Heavy_Bread_Champ // Gets Faster and Marks-for-Death, but hurts itself on each hit
 // T_TFBot_Heavy_Eviction_Champ	// Eviction MvM
 // T_TFBot_Heavy_KGB_Champ	
+// T_TFBot_Heavy_Laugh_Champ
 // T_TFBot_Heavy_Maul_Champ	// Warrior Spirit MvM
-// T_TFBot_Heavy_Maul_Champ_HibernatingBear // [Old Set] 
-// T_TFBot_Heavy_SteelFist
+// T_TFBot_Heavy_Maul_Champ_HibernatingBear // [Old Set] Gain minicrit and damage boost on kill
+// T_TFBot_Heavy_SteelFist	// Non-gauntlet steelfist
 // T_TFBot_Heavy_SteelFist_Batt
 // T_TFBot_Heavy_SteelFist_Buff
 // T_TFBot_Heavy_SteelFist_Conch
 // T_TFBot_Heavy_SteelFist_Pusher
+// T_TFBot_Heavy_SteelFist_Titanium
 
 // Notes for you nerds :3
  Attribute TeleportToHint // If you want the Engi to make tele for you, instead of y'know WALKING, expecting the red ENGI to be BLIND?
@@ -346,8 +365,8 @@
 // T_TFBot_Engineer_Teleports
 // T_TFBot_Engineer_Teleports_FastBuild
 
-// T_TFBot_Engineer_TeleIn	// PDQ, They just build tele + sentry
-// T_TFBot_Engineer_TeleIn_FastBuild
+// T_TFBot_Engineer_TeleIn	
+// T_TFBot_Engineer_TeleIn_FastBuild // PDQ, They just build tele + sentry
 // T_TFBot_Engineer_TeleIn_Giger	// Lower Sentry reach, but it deals more damage
 // T_TFBot_Engineer_TeleIn_Ranger
 // T_TFBot_Engineer_TeleIn_Gazer // Shoots Pomson-like Projectile
@@ -397,6 +416,7 @@
 // T_TFBot_Medic_Armored_Vacci_Bullet_Persist // Patient is 100% immune, but not the medic
 // T_TFBot_Medic_Armored_Vacci_Blast_Persist
 // T_TFBot_Medic_Armored_Vacci_Fire_Persist  
+// T_TFBot_Medic_Armored_Vacci_Cycle // didn't work???
 
 // T_TFBot_Medic_Kritzkrieg // 10min Kritz every 1.6-3.2s
 // T_TFBot_Medic_Kritzkrieg_Shield // 10min Kritz every 1.6-3.2s; once hurt shield Lv1 is up for 15s
@@ -412,6 +432,7 @@
 // T_TFBot_Medic_Uber_Blink // 2s Uber every 3.5-7s
 // T_TFBot_Medic_Uber_Extended // 12s Uber every 8-16s
 // T_TFBot_Medic_Uber_Infinite
+// T_TFBot_Medic_Uber_InstantPop
 // T_TFBot_Medic_Uber_Placebo // NEVER ubers
 // T_TFBot_Medic_Uber_Rapid // 5s Uber every 8-16s
 // T_TFBot_Medic_Uber_Shield // 5s Uber every 8-16s; once hurt shield Lv1 is up for 15s
@@ -422,6 +443,7 @@
 // T_TFBot_Medic_Vacci_Blast_Persist
 // T_TFBot_Medic_Vacci_Fire
 // T_TFBot_Medic_Vacci_Fire_Persist
+// T_TFBot_Medic_Armored_Vacci_Cycle // need to ask getty on how to fix this!
 
 // T_TFBot_Medic_Amputator // Leech target's health and spreads it around its allies
 // T_TFBot_Medic_Amputator_Gesture // Requires Rafradekmod to function
@@ -432,7 +454,6 @@
 // T_TFBot_Medic_Vitasaw // Leech target's uber and charges for itself
 // T_TFBot_Medic_Vitasaw_SelfUber // Leech target's uber and charges for itself
 // T_TFBot_Medic_Vitasaw_Bleed // Trade offer, it gains speed -><- you get BlackPlague.
-
 
 // Sniper
 // T_TFBot_Sniper_Armored
@@ -455,6 +476,7 @@
 // T_TFBot_Sniper_Sydney_Crocostyle // [Old set] Headshot immune
 
 // T_TFBot_Sniper_Bowman
+// T_TFBot_Sniper_Bowman_Ignite
 // T_TFBot_Sniper_Bowman_Nerfed
 // T_TFBot_Sniper_Bowman_RapidFire
 
@@ -475,28 +497,91 @@
 // T_TFBot_Sniper_Shiv_Mark
 
 // Spy
+// T_TFBot_Spy_Armored
+// T_TFBot_Spy_Ambassador
+// T_TFBot_Spy_Ambassador_Deagle
+// T_TFBot_Spy_Ambassador_Headshot // Put it in the mission_sniper
+// T_TFBot_Spy_Ambassador_ExplosiveHeadshot // add Skill Expert + mission_sniper
+// T_TFBot_Spy_Revolver
+// T_TFBot_Spy_Revolver_Burst
+// T_TFBot_Spy_Revolver_Fanning // Clip dump the entire thing
+// T_TFBot_Spy_Revolver_Push
+// T_TFBot_Spy_Revolver_RapidFire
+// T_TFBot_Spy_Tranquil // Slow on Hit
 
+// T_TFBot_Spy_Sapper
+// T_TFBot_Spy_Sapper_Degen
+
+// T_TFBot_Spy_BigEarner
+// T_TFBot_Spy_BigEarner_ManofHonor // [Old set]  First hit while disguised deals 3x
+// T_TFBot_Spy_Kunai	 // Absorbs up to 300 HP if ignored
+// T_TFBot_Spy_Kunai_Ringer
+// T_TFBot_Spy_Kunai_Dishonor // Imperfect Trickstab Spy. Not even your back? It DOESNOT care.
+// T_TFBot_Spy_Ringer
+// T_TFBot_Spy_Stock
+// T_TFBot_Spy_YER	// No kill feed
+// T_TFBot_Spy_YER_Saharan	// [Old set] No sound w/se. Absolutely no indicator of their kill.
+
+// FAKETANK BOSS
 
 // GIANTS
 
 // Scout
+// T_TFBot_Giant_Scout_Armored_Sandman  
+// T_TFBot_Giant_Scout_Shortstop
 
 // Soldier
+// T_TFBot_Giant_Soldier_Bazooka
+// T_TFBot_Giant_Soldier_Bazooka_Batt
+// T_TFBot_Giant_Soldier_Bazooka_Buff
+// T_TFBot_Giant_Soldier_Bazooka_Conch
+// T_TFBot_Giant_Soldier_Burst_Hyper
+// T_TFBot_Soldier_Charged_Atomic
+// T_TFBot_Giant_Soldier_DirectHit_RapidFire
+// T_TFBot_Giant_Soldier_RapidFire // My template is airblast immune. Screw you, pyro!
+// T_TFBot_Giant_Soldier_Push
 	
 // Pyro
+// T_TFBot_Giant_Pyro_Airblast_Pusher	
+// T_TFBot_Giant_Pyro_Deflector
+// T_TFBot_Giant_Pyro_Flamethrower_Afterburn
+// T_TFBot_Giant_Pyro_Flamethrower_FlameRicochet
+// T_TFBot_Giant_Pyro_Gas_Afterburn
+// T_TFBot_Giant_Pyro_Phlog
+// T_TFBot_Giant_Pyro_Phlog_FlameRicochet
+// T_TFBot_Giant_Pyro_Phlog_TauntCancel
+// T_TFBot_Giant_Pyro_Flaregun_RapidFire
+// T_TFBot_Giant_Pyro_Scorch_RapidFire
+// T_TFBot_Giant_Pyro_ThirdDegree
 
 // Demo
+// T_TFBot_Giant_Demoman_RapidFire
+// T_TFBot_Giant_Demoman_RapidFire_Batt
+// T_TFBot_Giant_Demoman_RapidFire_Buff
+// T_TFBot_Giant_Demoman_RapidFire_Conch
+// T_TFBot_Giant_Demoman_Grenade_Push
+// T_TFBot_Giant_Demoman_Cannon_Push
+
+// T_TFBot_Giant_Demoknight_Caber_Atomic 
 
 // Heavy 
+// T_TFBot_Giant_Heavy_BrassBeast_Deflector_KritonKill
+// T_TFBot_Giant_Heavy_Deflector_KritonKill
+// T_TFBot_Giant_Heavy_Tomislav
+// T_TFBot_Giant_Heavy_Laugh_Champ
+// T_TFBot_Giant_Heavy_Laugh_Champ_Weak
+// T_TFBot_Giant_Heavy_Maul_Champ
 
 // Engineer
 
 // Medic
+// T_TFBot_Giant_Medic_Battle_Needle
+// T_TFBot_Giant_Medic_QuickFix_Pop // 5s MegaHeal every 8-16s
+// T_TFBot_Giant_Medic_Uber_Pop // 10s Uber every 8-16s
+// T_TFBot_Giant_Medic_Vacci_Blast
+// T_TFBot_Giant_Medic_Vacci_Bullet
+// T_TFBot_Giant_Medic_Vacci_Fire
 
 // Sniper
 
 // Spy
-// T_TFBot_Scout_Wrap // more of an annoyance compared to sandman, put them as mission_sniper for maximum PAIN value
-// T_TFBot_Scout_Wrap_LittleAccomplice // Old Item set. Targets laugh when hit by bauble, they died? This bot laughs.
-
-// T_TFBot_Giant_Scout_Shortstop
